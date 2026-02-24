@@ -1,0 +1,111 @@
+@charset "utf-8";
+$color: #282828;
+$colorRed: #EF533F;
+$colorCCC: #CCCCCC;
+$colorGrey: #667085;
+$colorBlue: #00306B;
+$colorBlue2: #3BA3D0;
+$colorGreen: #0f6567;
+$colorYellow: #FF931E;
+$colorOrange: #FF732C;
+
+.content_trusted-protection {
+    position: relative;
+    background: #fff;
+    width: 100%;
+    min-height: 100px;
+    padding: 80px 0 30px 0;
+}
+
+.trusted_protection__slider {
+    position: relative;
+    img {
+        width: 100%;
+        position: relative;
+    }
+}
+
+.trusted_protection__options {
+    .t_p__flex {
+        width: 100%;
+        position: relative;
+        display: flex;
+        padding: 30px 0;
+
+        .t_p__left {
+            width: 35%;
+
+            .t_p__title {
+                font-size: 44px;
+                padding: 5px 0 0 0;
+                font-weight: 700;
+                line-height: 1.2em;
+
+                span {
+                    display: block;
+                }
+            }
+
+            .t_p__more {
+                color: #6E6E6E;
+                padding: 20px 0 0 0;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    font-size: 24px;
+                    font-weight: 400;
+                    color: #6E6E6E;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .t_p__right {
+            width: 60%;
+            padding-left: 5%;
+        }
+    }
+}
+
+.protection_data {
+    display: flex;
+    position: relative;
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #00000014;
+
+/*    &:last-child {
+        border-bottom: none;
+    }*/
+
+    .protection_data__success {
+        width: 200px;
+        min-width: 200px;
+        position: relative;
+
+        .p_t_num {
+            font-size: 64px;
+            font-weight: 500;
+
+        }
+
+        .p_t_num_desc {
+            font-size: 16px;
+            font-weight: 300;
+
+        }
+
+    }
+
+    .protection_data__desc {
+        padding: 5px 0;
+        width: 100%;
+        position: relative;
+        font-size: 24px;
+        color: #00003D;
+    }
+
+}
+

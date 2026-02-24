@@ -5,7 +5,9 @@ return [
     'published_off' =>'<h3 class="h3">Ваш профиль на модерации</h3><p>В ближайшее время вы сможете полноценно пользоваться сервисом</p>',
     'tour_data' => 'tour_data',
     'order_id' => 'order_id',
-    'excursion_order' => 'excursion_order'
+    'excursion_order' => 'excursion_order',
+    'prev' => 'Назад',
+    'next' => 'Вперед',
 
 ];
 

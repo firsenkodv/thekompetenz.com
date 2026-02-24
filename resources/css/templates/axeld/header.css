@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/* Общие настройки блока header_background */
+.header_background {
+  width: 100%;
+  height: 858px;
+  position: relative;
+  overflow: hidden; /* Скрывает любые выходящие элементы */
+  z-index: 1;
+}
+
+/* Фиксируем размер и положение видео */
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: auto; /* Высота должна подгоняться автоматически */
+  object-fit: cover; /* Сохраняем пропорции */
+}
+
+.header_background_about-us {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  overflow: hidden; /* Скрывает любые выходящие элементы */
+  z-index: 1;
+}
+.header_background_about-us #background-video {
+  position: absolute;
+}
+.header_background_about-us .about-us-data {
+  color: #fff;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 840px;
+  margin: auto;
+}
+.header_background_about-us .about-us-data .h2 {
+  width: 100%;
+  font-size: 44px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.header_background_about-us .about-us-data p.short_desc {
+  width: 100%;
+  justify-content: center;
+  padding: 10px 0;
+  line-height: 1.5em;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.block_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  gap: 20px;
+  height: 76px;
+}
+.block_header .block_header__left {
+  width: 20%;
+}
+.block_header .block_header__left .logo {
+  position: relative;
+}
+.block_header .block_header__center {
+  width: 60%;
+}
+.block_header .block_header__right {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 76px;
+}
+.block_header .block_header__right .header_enter {
+  padding: 0 20px 0 0;
+}
+
+._line {
+  width: 100%;
+  height: 1px;
+  margin: 26px 0;
+  background: rgba(244, 246, 248, 0.2);
+}
+
+.our_mission {
+  display: flex;
+  color: #fff;
+  padding: 10px 0;
+  line-height: 1.4em;
+}
+.our_mission .our_mission__left {
+  width: 30%;
+}
+.our_mission .our_mission__right {
+  width: 70%;
+  max-height: 80px;
+  overflow: hidden;
+}
+.our_mission .our_mission__right p {
+  line-height: 1.6em;
+}
+
+/* Общие настройки блока header_background
+   Cиняя тема */
+.header_background.template-blue {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  z-index: 1;
+}
+.header_background.template-blue .flex-direction {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.blue-gradient {
+  background: radial-gradient(74.65% 279.9% at 25.35% 50%, #00003D 0%, #0164F5 60.07%);
+  position: relative;
+  width: 100%;
+}
+
+.seo_title {
+  color: #fff;
+  padding: 10px 0 30px 0;
+}
+.seo_title h1 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.3em;
+}
+
+/* Общие настройки блока header_background
+   Белая  тема */
+.header_background.template-white {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+/*# sourceMappingURL=header.css.map */

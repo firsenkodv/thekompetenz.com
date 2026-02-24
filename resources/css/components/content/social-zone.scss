@@ -1,0 +1,32 @@
+@charset "utf-8";
+$color: #282828;
+$colorRed: #EF533F;
+$colorCCC: #CCCCCC;
+$colorGrey: #667085;
+$colorBlue: #00306B;
+$colorBlue2: #3BA3D0;
+$colorGreen: #0f6567;
+$colorYellow: #FF931E;
+$colorOrange: #FF732C;
+
+.content_social__zone {
+    padding: 20px 0 10px 0;
+}
+.social-zone {
+    display: flex;
+    padding: 20px 0;
+    div {
+        padding: 4px;
+        a {
+            text-decoration: none;
+            color: $color;
+            position: relative;
+            padding:0 10px 0 0;
+        }
+        img {
+            min-width: 32px;
+        }
+    }
+
+}
+

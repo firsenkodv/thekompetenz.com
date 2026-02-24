@@ -1,0 +1,48 @@
+.btn {
+  width: auto;
+  height: 52px;
+  line-height: 49px;
+  display: inline-table;
+  text-align: center;
+  background: #0870D8;
+  border-radius: 36px;
+  font-size: 16px;
+  border: 1px solid #0870D8;
+  color: #FFFFFF;
+  position: relative;
+  transition: 0.3s;
+  text-decoration: none !important;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.btn:hover {
+  border: 1px solid #3BA3D0;
+  background: #3BA3D0;
+  color: #fff;
+}
+
+.btn.btn_white {
+  background: #fff;
+  border-radius: 36px;
+  border: 1px solid #0870D8;
+  color: #0870D8;
+}
+
+.btn.btn_white:hover {
+  background: #3BA3D0;
+  border-radius: 36px;
+  border: 1px solid #3BA3D0;
+  color: #fff;
+}
+
+.btn-20 {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 478px) {
+  .btn {
+    height: 46px;
+  }
+}
+
+/*# sourceMappingURL=buttons.css.map */
