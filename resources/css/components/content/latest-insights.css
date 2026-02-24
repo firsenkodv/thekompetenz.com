@@ -1,0 +1,95 @@
+.latest_insights {
+  background: radial-gradient(74.65% 279.9% at 25.35% 50%, #00003D 0%, #0164F5 60.07%);
+  position: relative;
+  width: 100%;
+}
+
+.content_latest_insights {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  padding: 55px 0 20px 0;
+  color: #fff;
+}
+
+.l_i__flex {
+  display: flex;
+}
+.l_i__flex .l_i__left {
+  width: 35%;
+}
+.l_i__flex .l_i__left .l_i__wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+.l_i__flex .l_i__left .l_i__wrap .l_i__title {
+  font-size: 44px;
+  padding: 15px 0 0 0;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+.l_i__flex .l_i__left .l_i__wrap .l_i_more {
+  color: #fff;
+  padding-bottom: 17px;
+}
+.l_i__flex .l_i__left .l_i__wrap .l_i_more a {
+  font-size: 24px;
+  display: flex;
+  gap: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+.l_i__flex .l_i__right {
+  width: 60%;
+  padding-left: 5%;
+}
+.l_i__flex .l_i__right .l_i__items {
+  padding: 32px 0 0 0;
+}
+.l_i__flex .l_i__right .l_i__item {
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(244, 246, 248, 0.2);
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  transition: 0.2s;
+}
+.l_i__flex .l_i__right .l_i__itema:hover {
+  color: #3BA3D0;
+}
+.l_i__flex .l_i__right .l_i__item .l_i_breadcrumbs {
+  font-size: 14px;
+  padding: 10px 0;
+}
+.l_i__flex .l_i__right .l_i__item .l_i_short_desc h2 {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.2em;
+  padding: 10px 0;
+}
+.l_i__flex .l_i__right .l_i__item .l_i_short_desc p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.4em;
+  padding: 10px 0;
+}
+
+.content_our-values .l_i__flex {
+  padding-bottom: 40px;
+}
+.content_our-values .l_i__flex .l_i_breadcrumbs {
+  color: rgba(244, 246, 248, 0.2);
+  border-bottom: 1px solid rgba(244, 246, 248, 0.2);
+}
+.content_our-values .l_i__flex .l_i__item {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.content_our-values .l_i__flex .l_i__item h2 {
+  padding-top: 20px !important;
+}
+
+/*# sourceMappingURL=latest-insights.css.map */

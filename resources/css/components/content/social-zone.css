@@ -1,0 +1,22 @@
+.content_social__zone {
+  padding: 20px 0 10px 0;
+}
+
+.social-zone {
+  display: flex;
+  padding: 20px 0;
+}
+.social-zone div {
+  padding: 4px;
+}
+.social-zone div a {
+  text-decoration: none;
+  color: #282828;
+  position: relative;
+  padding: 0 10px 0 0;
+}
+.social-zone div img {
+  min-width: 32px;
+}
+
+/*# sourceMappingURL=social-zone.css.map */
