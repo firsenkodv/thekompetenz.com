@@ -32,6 +32,7 @@
             <div class="with-840">
                 <div class="desc solution_item">{!! $solution_item->desc !!}</div>
                 <x-content.file-pdf :files="$solution_item->files"/>
+                <div class="desc solution_item">{!! $solution_item->desc2 !!}</div>
             </div>
         </div>
     </section>
