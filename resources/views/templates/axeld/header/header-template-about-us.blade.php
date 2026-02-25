@@ -1,7 +1,7 @@
 <header>
     <div class="header_background_about-us">
         <video autoplay muted loop playsinline id="background-video">
-            <source src="{{ Storage::url('video/1.mp4') }}" type="video/mp4">
+            <source src="{{ Storage::url('video/5.mp4') }}" type="video/mp4">
             Ваш браузер не поддерживает видео тег.
         </video>
         <!-- Остальной контент -->

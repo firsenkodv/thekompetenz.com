@@ -10,12 +10,33 @@
 <x-seo.img
     :top_img="$solution_category->img2"
 />
+@section('solution_category')
+    <div class="solution_category">
+        <div class="with-840">
+            <div class="subtitle">{{ $solution_category->subtitle }}</div>
+            <div class="title"><h1>{{ $solution_category->title }}</h1></div>
+            <div class="short_desc">{{ $solution_category->short_desc }}</div>
+        </div>
+    </div>
+@endsection
 @section('content-top-img')
-    <section class="content-website">
-        <div class="block relative">
 
+    <section class="">
+        <div class="relative">
+            <x-menu.menu-horizontal :items="$items" route="item.solutions"/>
         </div>
     </section>
+
+    <section class="content-website">
+        <div class="block relative">
+            <div class="with-840">
+                <div class="desc">{!! $solution_category->desc !!}</div>
+                <x-content.file-pdf :files="$solution_category->files"/>
+
+            </div>
+        </div>
+    </section>
+
 @endsection
 
 

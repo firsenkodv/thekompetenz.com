@@ -5,17 +5,13 @@ declare(strict_types=1);
 namespace App\MoonShine\Layouts;
 
 use App\MoonShine\Pages\BusinessPage;
-use App\MoonShine\Pages\ContactPage;
-use App\MoonShine\Pages\FleetShipPage;
-use App\MoonShine\Pages\FleetSpeedBoatPage;
 use App\MoonShine\Pages\HomePage;
 use App\MoonShine\Pages\IndividualPage;
 use App\MoonShine\Pages\InsightPage;
 use App\MoonShine\Pages\SettingPage;
 use App\MoonShine\Pages\WorkPage;
 use App\MoonShine\Resources\MoonShineUser\MoonShineUserResource;
-use App\MoonShine\Resources\Page\PageResource;
-use App\MoonShine\Resources\SiteNew\SiteNewResource;
+
 use MoonShine\Laravel\Layouts\AppLayout;
 use MoonShine\ColorManager\Palettes\PurplePalette;
 use MoonShine\ColorManager\ColorManager;
@@ -29,10 +25,10 @@ use App\MoonShine\Resources\Business\BusinessResource;
 use App\MoonShine\Resources\Individual\IndividualResource;
 use App\MoonShine\Resources\Insight\InsightResource;
 use App\MoonShine\Resources\Work\WorkResource;
-use App\MoonShine\Resources\SolitionCategory\SolitionCategoryResource;
-use App\MoonShine\Resources\SolitionItem\SolitionItemResource;
+
 use App\MoonShine\Resources\SolutionCategory\SolutionCategoryResource;
 use App\MoonShine\Resources\SolutionItem\SolutionItemResource;
+use App\MoonShine\Resources\SolutionTag\SolutionTagResource;
 
 final class AxeldLayout extends AppLayout
 {
@@ -74,6 +70,7 @@ final class AxeldLayout extends AppLayout
                     MenuItem::make(WorkResource::class, 'Departments', 'currency-dollar'),
                     ]),
                 MenuGroup::make(static fn() => __('Solutions'), [
+                    MenuItem::make(SolutionTagResource::class, 'Solution Tags','tag'),
                     MenuItem::make(SolutionCategoryResource::class, 'Categories', 'arrow-right-end-on-rectangle'),
                     MenuItem::make(SolutionItemResource::class, 'Items' ,'bolt'),
                     ]),

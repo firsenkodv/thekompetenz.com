@@ -9,11 +9,11 @@ use Illuminate\View\Component;
 
 class FilePdf extends Component
 {
-    public array $files;
+    public array $files = [];
 
     public function __construct($files = null)
     {
-        if (!is_null($files)) {
+        if (isset($files)) {
             $f = [];
             foreach ($files as $k=>$file) {
                 $f[$k]['title'] = ($file['json_files_label'])?:'-';

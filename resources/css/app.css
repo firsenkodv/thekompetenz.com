@@ -6,9 +6,11 @@
 @import '@fontsource-variable/nunito-sans/full.css';
 
 @import 'message/flach_message.scss';
+@import 'components/content/solution.scss';
 @import 'components/content/file-pdf.scss';
 @import 'components/content/feedback-form.scss';
 @import 'components/menu/header-menu-component.scss';
+@import 'components/menu/menu_menu-horizontal.scss';
 @import 'components/content/trusted-protection.scss';
 @import 'components/content/services-business.scss';
 @import 'components/content/latest-insights.scss';

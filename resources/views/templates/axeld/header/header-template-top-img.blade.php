@@ -2,6 +2,7 @@
     <div class="header_background_top_img">
         <div class="top_img__div">
             <img class="top_img" src="/storage/@yield('top_img')" alt="{{route_name()}}" />
+            @yield('solution_category')
         </div>
         <!-- Остальной контент -->
         <div class="block_header block">

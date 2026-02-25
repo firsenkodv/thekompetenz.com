@@ -4,9 +4,12 @@ declare(strict_types=1);
 
 namespace App\MoonShine\Resources\SolutionCategory\Pages;
 
+use App\MoonShine\Resources\SolutionTag\SolutionTagResource;
+use Illuminate\Contracts\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use MoonShine\Contracts\Core\DependencyInjection\CrudRequestContract;
 use MoonShine\Crud\JsonResponse;
+use MoonShine\Laravel\Fields\Relationships\BelongsToMany;
 use MoonShine\Laravel\Pages\Crud\IndexPage;
 use MoonShine\Contracts\UI\ComponentContract;
 use MoonShine\Support\Attributes\AsyncMethod;
@@ -15,6 +18,7 @@ use MoonShine\UI\Components\Table\TableBuilder;
 use MoonShine\Contracts\UI\FieldContract;
 use MoonShine\Laravel\QueryTags\QueryTag;
 use MoonShine\UI\Components\Metrics\Wrapped\Metric;
+use MoonShine\UI\Fields\Field;
 use MoonShine\UI\Fields\ID;
 use App\MoonShine\Resources\SolutionCategory\SolutionCategoryResource;
 use MoonShine\Support\ListOf;
@@ -43,6 +47,7 @@ class SolutionCategoryIndexPage extends IndexPage
             Text::make('Title', 'title')->updateOnPreview(),
             Switcher::make('Published', 'published')->updateOnPreview(),
             Text::make('Sorting', 'sorting')->updateOnPreview(),
+
             Switcher::make('Metatitle', 'metatitle'),
             Switcher::make('Description', 'description'),
             Switcher::make('Keywords', 'keywords'),

@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class SolutionCategory extends Model
 {
@@ -15,6 +16,21 @@ class SolutionCategory extends Model
         'faq' => 'collection',
         'files' => 'collection',
     ];
+
+    /**
+     * Связь один ко многим с решениями (SolutionItem)
+     */
+    public function solutionItems()
+    {
+        return $this->hasMany(SolutionItem::class);
+    }
+
+    public function solutionTags(): BelongsToMany
+    {
+        return $this->belongsToMany(SolutionTag::class);
+
+    }
+
 
     protected static function boot(): void
     {

@@ -2,23 +2,32 @@
 
 declare(strict_types=1);
 
-namespace App\MoonShine\Resources\SolutionItem\Pages;
+namespace App\MoonShine\Resources\SolutionTag\Pages;
 
-use MoonShine\Laravel\Pages\Crud\DetailPage;
+use App\MoonShine\Resources\SolutionCategory\SolutionCategoryResource;
+use MoonShine\Laravel\Fields\Relationships\BelongsTo;
+use MoonShine\Laravel\Pages\Crud\IndexPage;
 use MoonShine\Contracts\UI\ComponentContract;
 use MoonShine\UI\Components\Table\TableBuilder;
 use MoonShine\Contracts\UI\FieldContract;
-use App\MoonShine\Resources\SolutionItem\SolutionItemResource;
-use MoonShine\Support\ListOf;
+use MoonShine\Laravel\QueryTags\QueryTag;
+use MoonShine\UI\Components\Metrics\Wrapped\Metric;
 use MoonShine\UI\Fields\ID;
+use App\MoonShine\Resources\SolutionTag\SolutionTagResource;
+use MoonShine\Support\ListOf;
+use MoonShine\UI\Fields\Image;
+use MoonShine\UI\Fields\Switcher;
+use MoonShine\UI\Fields\Text;
 use Throwable;
 
 
 /**
- * @extends DetailPage<SolutionItemResource>
+ * @extends IndexPage<SolutionTagResource>
  */
-class SolutionItemDetailPage extends DetailPage
+class SolutionTagIndexPage extends IndexPage
 {
+    protected bool $isLazy = true;
+
     /**
      * @return list<FieldContract>
      */
@@ -26,12 +35,40 @@ class SolutionItemDetailPage extends DetailPage
     {
         return [
             ID::make(),
+            Text::make('Title', 'title')->updateOnPreview(),
         ];
     }
 
+    /**
+     * @return ListOf
+     */
     protected function buttons(): ListOf
     {
         return parent::buttons();
+    }
+
+    /**
+     * @return list<FieldContract>
+     */
+    protected function filters(): iterable
+    {
+        return [];
+    }
+
+    /**
+     * @return list<QueryTag>
+     */
+    protected function queryTags(): array
+    {
+        return [];
+    }
+
+    /**
+     * @return list<Metric>
+     */
+    protected function metrics(): array
+    {
+        return [];
     }
 
     /**
@@ -39,7 +76,7 @@ class SolutionItemDetailPage extends DetailPage
      *
      * @return TableBuilder
      */
-    protected function modifyDetailComponent(ComponentContract $component): ComponentContract
+    protected function modifyListComponent(ComponentContract $component): ComponentContract
     {
         return $component;
     }

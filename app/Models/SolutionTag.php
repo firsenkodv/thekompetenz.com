@@ -4,24 +4,22 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
-class SolutionItem extends Model
+class SolutionTag extends Model
 {
-    protected $table = 'solution_items';
+    protected $table = 'solution_tags';
     protected $guarded = [];
 
     protected $casts = [
         'params' => 'collection',
-        'gallery' => 'collection',
-        'faq' => 'collection',
-        'files' => 'collection',
     ];
 
-    public function solutionCategory(): BelongsTo
+    public function solutionCategory():BelongsToMany
     {
-        return $this->belongsTo(SolutionCategory::class, 'solution_category_id');
-    }
+        return $this->belongsToMany(SolutionCategory::class);
 
+    }
 
     protected static function boot(): void
     {

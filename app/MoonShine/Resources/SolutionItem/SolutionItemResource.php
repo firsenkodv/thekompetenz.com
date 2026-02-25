@@ -8,20 +8,22 @@ use Illuminate\Database\Eloquent\Model;
 use App\Models\SolutionItem;
 use App\MoonShine\Resources\SolutionItem\Pages\SolutionItemIndexPage;
 use App\MoonShine\Resources\SolutionItem\Pages\SolutionItemFormPage;
-use App\MoonShine\Resources\SolutionItem\Pages\SolutionItemDetailPage;
 
 use MoonShine\Laravel\Resources\ModelResource;
 use MoonShine\Contracts\Core\PageContract;
 
 /**
- * @extends ModelResource<SolutionItem, SolutionItemIndexPage, SolutionItemFormPage, SolutionItemDetailPage>
+ * @extends ModelResource<SolutionItem, SolutionItemIndexPage, SolutionItemFormPage>
  */
 class SolutionItemResource extends ModelResource
 {
     protected string $model = SolutionItem::class;
 
-    protected string $title = 'SolutionItems';
-    
+    protected string $title = 'Solution Items';
+
+    protected string $column = 'title';
+    protected string $sortColumn = 'sorting';
+
     /**
      * @return list<class-string<PageContract>>
      */
@@ -30,7 +32,6 @@ class SolutionItemResource extends ModelResource
         return [
             SolutionItemIndexPage::class,
             SolutionItemFormPage::class,
-            SolutionItemDetailPage::class,
         ];
     }
 }

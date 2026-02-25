@@ -1,0 +1,45 @@
+.with-840 {
+    max-width: 840px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.solution_category {
+    z-index: 5;
+position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: #fff;
+    padding-bottom: 50px;
+
+    .subtitle {
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+        padding: 0 0 10px 0;
+
+    }
+
+    .title {
+        padding:10px 0 20px 0;
+
+        h1 {
+            font-weight: 700;
+            font-size: 44px;
+            text-align: center;
+            line-height: 1.2em;
+        }
+    }
+
+    .short_desc {
+        font-weight: 200;
+        font-size: 24px;
+        text-align: center;
+        line-height: 1.2em;
+    }
+
+}

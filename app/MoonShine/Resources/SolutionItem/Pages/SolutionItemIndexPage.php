@@ -4,8 +4,15 @@ declare(strict_types=1);
 
 namespace App\MoonShine\Resources\SolutionItem\Pages;
 
+use App\MoonShine\Resources\SolutionCategory\SolutionCategoryResource;
+use Illuminate\Database\Eloquent\Model;
+use MoonShine\Contracts\Core\DependencyInjection\CrudRequestContract;
+use MoonShine\Crud\JsonResponse;
+use MoonShine\Laravel\Fields\Relationships\BelongsTo;
 use MoonShine\Laravel\Pages\Crud\IndexPage;
 use MoonShine\Contracts\UI\ComponentContract;
+use MoonShine\Support\Attributes\AsyncMethod;
+use MoonShine\UI\Components\ActionButton;
 use MoonShine\UI\Components\Table\TableBuilder;
 use MoonShine\Contracts\UI\FieldContract;
 use MoonShine\Laravel\QueryTags\QueryTag;
@@ -13,6 +20,9 @@ use MoonShine\UI\Components\Metrics\Wrapped\Metric;
 use MoonShine\UI\Fields\ID;
 use App\MoonShine\Resources\SolutionItem\SolutionItemResource;
 use MoonShine\Support\ListOf;
+use MoonShine\UI\Fields\Image;
+use MoonShine\UI\Fields\Switcher;
+use MoonShine\UI\Fields\Text;
 use Throwable;
 
 
@@ -30,23 +40,27 @@ class SolutionItemIndexPage extends IndexPage
     {
         return [
             ID::make(),
+            Image::make(__('Img'), 'img'),
+            Text::make('Title', 'title')->updateOnPreview(),
+            Switcher::make('Published', 'published')->updateOnPreview(),
+            Text::make('Sorting', 'sorting')->updateOnPreview(),
+            BelongsTo::make('Category', 'solutionCategory', 'title', resource: SolutionCategoryResource::class)->nullable(),
+            Switcher::make('Metatitle', 'metatitle'),
+            Switcher::make('Description', 'description'),
+            Switcher::make('Keywords', 'keywords'),
         ];
     }
 
-    /**
-     * @return ListOf<ActionButtonContract>
-     */
-    protected function buttons(): ListOf
-    {
-        return parent::buttons();
-    }
 
     /**
      * @return list<FieldContract>
      */
     protected function filters(): iterable
     {
-        return [];
+        return [
+            BelongsTo::make('Category', 'solutionCategory', 'title', resource: SolutionCategoryResource::class)->nullable(),
+
+        ];
     }
 
     /**
@@ -107,4 +121,35 @@ class SolutionItemIndexPage extends IndexPage
             ...parent::bottomLayer()
         ];
     }
+    protected function buttons(): ListOf
+    {
+        return parent::buttons()
+            ->add(
+                ActionButton::make('Clone')
+                    ->icon('document-duplicate')
+                    ->method('duplicateRow')
+                    ->withConfirm('Clone this row?', 'Сохраняется без полей "img", к полю "slug" добавляется функция time(), исправьте это вручную.')
+            );
+    }
+
+
+    #[AsyncMethod]
+    public static function duplicateRow(CrudRequestContract $request, JsonResponse $response)
+    {
+        $resource = $request->getResource();
+
+        /** @var Model $newItem */
+        $newItem = $resource?->getItem()->replicate();
+
+        $newItem->img = null;
+        $newItem->img2 = null;
+        $newItem->slug = $newItem->slug . time();
+        $newItem->save();
+
+        $url = $resource?->getFormPageUrl($newItem->id);
+
+        //return $response->redirect($url);
+        return redirect()->back();
+    }
+
 }
