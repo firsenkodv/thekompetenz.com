@@ -23,6 +23,7 @@ use App\MoonShine\Pages\WorkPage;
 use App\MoonShine\Resources\SolutionCategory\SolutionCategoryResource;
 use App\MoonShine\Resources\SolutionItem\SolutionItemResource;
 use App\MoonShine\Resources\SolutionTag\SolutionTagResource;
+use App\MoonShine\Resources\Contact\ContactResource;
 
 
 class MoonShineServiceProvider extends ServiceProvider
@@ -44,6 +45,7 @@ class MoonShineServiceProvider extends ServiceProvider
                 SolutionCategoryResource::class,
                 SolutionItemResource::class,
                 SolutionTagResource::class,
+                ContactResource::class,
             ])
             ->pages([
                 ...$core->getConfig()->getPages(),

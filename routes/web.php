@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Business\BusinessPageController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FeedbackForm\FeedbackFormController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Individual\IndividualPageController;
@@ -73,6 +74,12 @@ Route::controller(SolutionPageController::class)->group(function () {
 /** О компании */
 Route::controller(WorkPageController::class)->group(function () {
     Route::get('/about-us', 'index')->name('about-us');
+});
+/** ///О компании */
+/** О компании */
+Route::controller(ContactController::class)->group(function () {
+    Route::get('/contacts', 'index')->name('contacts');
+    Route::post('/contacts/search', 'search')->name('contacts.search');
 });
 /** ///О компании */
 

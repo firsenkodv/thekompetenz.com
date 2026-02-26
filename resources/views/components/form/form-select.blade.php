@@ -24,7 +24,7 @@
                     @foreach($options as $k=>$option)
                         <div class="option">
                             <input type="radio" class="radio" id="{{'select_service' . $k . $rand}}"
-                                   value="{{ $option['json_title'] }}"  name="select_service" />
+                                     value="{{ $option['json_title'] }}"  name="select_service" />
                             <label data-id="{{ $option['json_title']}}" for="{{'select_service' . $k . $rand }}">{{ $option['json_title'] }}</label>
                         </div>
                     @endforeach

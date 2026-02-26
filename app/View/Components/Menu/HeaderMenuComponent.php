@@ -63,7 +63,7 @@ class HeaderMenuComponent extends Component
             $menu[4]['parent'] = false;
 
             $menu[5]['text'] = 'Contact Us';
-            $menu[5]['link'] = '#';
+            $menu[5]['link'] =  route('contacts');
             $menu[5]['class'] = false;
             $menu[5]['data'] = false;
             $menu[5]['class_li'] = false;

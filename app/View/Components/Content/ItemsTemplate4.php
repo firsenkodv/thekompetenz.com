@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class ItemsTemplete4 extends Component
+class ItemsTemplate4 extends Component
 {
     public  ?object $items;
     public function __construct($items)
@@ -17,6 +17,6 @@ class ItemsTemplete4 extends Component
 
     public function render(): View|Closure|string
     {
-        return view('components.content.items-templete4');
+        return view('components.content.items-template4');
     }
 }

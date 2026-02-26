@@ -19,6 +19,7 @@
 @import 'components/content/items-template.scss';
 @import 'components/content/items-template2.scss';
 @import 'components/content/items-template4.scss';
+@import 'components/content/items-template5.scss';
 @import 'components/content/item-template.scss';
 @import 'components/content/social-zone.scss';
 @import 'components/content/content-faq.scss';
@@ -31,6 +32,7 @@
 @import 'components/form/form-response-component.scss';
 @import 'components/form/form-loader-component.scss';
 @import 'components/form/form-radio2-component.scss';
+@import 'components/form/filter_contact.scss';
 
 @import 'fancybox/fancubox6.scss';
 @import 'style.scss';

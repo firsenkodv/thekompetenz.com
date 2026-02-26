@@ -10,7 +10,7 @@
 @section('content-blue')
     <section class="content-website">
         <div class="block relative">
-            <x-content.items-templete4 :items="$categories" route="items.solutions" />
+            <x-content.items-template4 :items="$categories" route="items.solutions" />
         </div>
     </section>
 @endsection

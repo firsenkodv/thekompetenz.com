@@ -1,6 +1,7 @@
 <?php
 return [
     'allowed_sizes' => [
+        '24x24',
         '200x267',
         '384x238',
         '320x451',

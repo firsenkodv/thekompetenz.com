@@ -29,6 +29,7 @@ use App\MoonShine\Resources\Work\WorkResource;
 use App\MoonShine\Resources\SolutionCategory\SolutionCategoryResource;
 use App\MoonShine\Resources\SolutionItem\SolutionItemResource;
 use App\MoonShine\Resources\SolutionTag\SolutionTagResource;
+use App\MoonShine\Resources\Contact\ContactResource;
 
 final class AxeldLayout extends AppLayout
 {
@@ -80,6 +81,10 @@ final class AxeldLayout extends AppLayout
                 MenuItem::make(SettingPage::class, 'Settings', 'adjustments-vertical'),
                 MenuItem::make(MediaManagerPage::class, 'Media', 'film'),
 
+            ]),
+
+            MenuGroup::make(static fn() => __('Contacts'), [
+                MenuItem::make(ContactResource::class, 'Regions', 'map-pin'),
             ]),
 
 

@@ -71,6 +71,7 @@ if (!function_exists('cache_clear ')) {
         Cache::forget('works');
         Cache::forget('solution_categories');
         Cache::forget('solution_items');
+        Cache::forget('contacts');
 
     }
 }

@@ -142,6 +142,7 @@
   height: 300px;
   position: relative;
   z-index: 1;
+  overflow: visible;
 }
 .header_background.template-blue .flex-direction {
   display: flex;

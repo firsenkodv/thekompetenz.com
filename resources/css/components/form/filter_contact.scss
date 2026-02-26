@@ -1,0 +1,19 @@
+.f_contact {
+    position: relative;
+    max-width: 520px;
+    padding: 13px 0 0 0;
+
+    .select-box {
+        .options-container.active {
+
+            margin-top: 4px;
+            position: absolute;
+            bottom: initial !important;
+            top: 49px;
+        }
+    }
+    .search-box {
+        color: #282828;
+    }
+
+}
