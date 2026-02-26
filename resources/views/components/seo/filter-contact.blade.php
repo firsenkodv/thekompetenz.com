@@ -1,3 +1,4 @@
+@props(['value'])
 @section('filter_contact')
     <div class="f_contact">
         <div class="f_contact-feedback-form">
@@ -6,13 +7,14 @@
                 :put="false"
                 :action="route('contacts.search')"
             >
-
                 <x-form.form-select
                     name="Choose country" {{-- назване --}}
-                value=""
+                    value=""
+                    :selected="$value"
                     :options="$list"
                     field_name="search"
-                    required="{{ true }}"
+                    :required="true"
+                    :autoSubmit="true"
                 />
             </x-form.form>
         </div>

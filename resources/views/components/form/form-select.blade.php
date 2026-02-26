@@ -8,16 +8,18 @@
     'value' => '',
     'options' => [],
     'required' => false,
-    'field_name' => ''
+    'field_name' => '',
+    'autoSubmit' => false
 
 ])
 @if(count($options))
-    <div class="input-group app_select_group">
+    <div class="input-group app_select_group @if($autoSubmit) autoSubmit @endif">
+
         @if($title)
             <h4 class="_group_title">{{ $title }}</h4>
         @endif
-        <div class="select-box">
 
+        <div class="select-box">
             <div class="options-container scroll-block">
 
                 @if(count($options) > 0)

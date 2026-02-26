@@ -21,5 +21,14 @@ use Makeable;
         });
 
     }
+    public function search($search): ?Collection
+    {
+
+        return Contact::query()
+            ->where('published', 1)
+            ->where('title', $search)
+            ->orderBy('sorting', 'desc')
+            ->get();
+    }
 
 }

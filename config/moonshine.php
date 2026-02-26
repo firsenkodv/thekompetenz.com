@@ -112,7 +112,7 @@ return [
         // Корневая директория
         'disk' => config('filesystem.default', 'public'),
         // Разрешенные для загрузки расширения файлов
-        'allowed_ext' => 'jpg,jpeg,png,pdf,doc,docx,zip',
+        'allowed_ext' => 'jpg,jpeg,png,pdf,doc,docx,zip,mp4,svg',
         // Вид менеджера по-умолчанию
         'default_view' => 'table',
     ]

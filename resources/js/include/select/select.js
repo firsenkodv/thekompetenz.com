@@ -66,6 +66,8 @@ export function select() {
 
                 // Переключение выделения
                 function moveSelection(direction) {
+
+
                     // Убираем активный класс у предыдущего элемента
                     optionsList[activeIndex].classList.remove('active');
 
@@ -98,6 +100,8 @@ export function select() {
             /** выбор одной из option **/
             function clickOption(e) {
 
+
+
                 /** Получаем все элементы .option внутри .options-container **/
                 const options = optionsContainer.querySelectorAll('.option');
 
@@ -124,6 +128,19 @@ export function select() {
                 if (fieldName !== null) {
                     fieldName.value = label.dataset.id
                 }
+
+                /** если autoSubmit **/
+                if(parentEl.classList.contains('autoSubmit')) {
+//console.log(label.textContent)
+                    // Находим ближайшую форму
+                    const form = this.closest('form');
+                    if (form) {
+                        // Отправляем форму
+                        form.submit();
+                    }
+                }
+                /** ///если autoSubmit **/
+
 
 
                 }

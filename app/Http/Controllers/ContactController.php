@@ -15,5 +15,14 @@ class ContactController extends Controller
        return view('contacts.items', compact('items'));
     }
 
+    public function search(Request $request):View
+    {
+
+        $value = trim($request->search);
+        $items = ContactViewModel::make()->search($value);
+        return view('contacts.items', compact('items', 'value'));
+
+
+    }
 
 }

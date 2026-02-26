@@ -7,7 +7,10 @@
 <x-seo.title
     title_h1="Our offices"
 />
-<x-seo.filter-contact :items="$items" />
+<x-seo.filter-contact
+    :items="$items"
+    :value="(isset($value)) ? $value : ''"
+/>
 
 @section('content-blue')
     <section class="content-website">

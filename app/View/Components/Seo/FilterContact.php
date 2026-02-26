@@ -12,6 +12,7 @@ class FilterContact extends Component
     public  ?array $list;
     public function __construct($items)
     {
+        $items = ContactViewModel::make()->contacts();
         $office = [];
         foreach ($items as $item) {
             $office[$item->id]['json_title']  = $item->title;
@@ -20,7 +21,6 @@ class FilterContact extends Component
      $this->list = $office;
 
     }
-
 
 
     /**

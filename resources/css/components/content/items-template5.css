@@ -63,5 +63,10 @@
   height: 336px;
   background: #cccccc;
 }
+.content_items-template5 .item5 .item5__flex .item5__right .map h5 {
+  color: #00003D;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
 
 /*# sourceMappingURL=items-template5.css.map */
