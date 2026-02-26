@@ -36,7 +36,7 @@
                                     balloonContent: '<h5>{{ $item->map_array['title'] }}</h5><p class="jt_ph">{{ $item->map_array['phone'] }}</p> <p class="jt_ph">{{ $item->map_array['email'] }}</p>'
                                 }, {
                                     iconLayout: 'default#image',
-                                    iconImageHref: 'https://academyis.com/storage/contacts/myIcon.svg',
+                                    iconImageHref: '/storage/contacts/myIcon.svg',
                                     iconImageSize: [58, 55],
                                     iconImageOffset: [-28, -48]
                                 });
