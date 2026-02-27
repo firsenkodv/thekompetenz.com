@@ -133,8 +133,7 @@ class ContactIndexPage extends IndexPage
         /** @var Model $newItem */
         $newItem = $resource?->getItem()->replicate();
 
-        $newItem->img = null;
-        $newItem->img2 = null;
+        $newItem->flag = null;
         $newItem->slug = $newItem->slug . time();
         $newItem->save();
 
