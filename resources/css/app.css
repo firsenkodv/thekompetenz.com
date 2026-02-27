@@ -24,8 +24,7 @@
 @import 'components/content/social-zone.scss';
 @import 'components/content/content-faq.scss';
 @import 'components/buttons/buttons.scss';
-@import 'templates/axeld/header.scss';
-@import 'templates/axeld/footer.scss';
+
 @import 'templates/axeld/swiper.scss';
 @import 'components/form/form-input-component.scss';
 @import 'components/form/form-select-component.scss';
@@ -35,4 +34,7 @@
 @import 'components/form/filter_contact.scss';
 
 @import 'fancybox/fancubox6.scss';
+@import 'templates/axeld/header.scss';
+@import 'templates/axeld/footer.scss';
+@import 'fonts.scss';
 @import 'style.scss';

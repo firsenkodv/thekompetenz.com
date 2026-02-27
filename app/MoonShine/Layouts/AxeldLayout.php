@@ -103,17 +103,12 @@ final class AxeldLayout extends AppLayout
 
     protected function getFooterCopyright(): string
     {
-        return \sprintf(
-            <<<'HTML'
-                &copy; %d Made  by
-                <a href="https://t.me/firsenko"
-                    class="font-semibold text-primary"
-                    target="_blank"
-                >
-                    @firsenko
-                </a>
-                HTML,
-            now()->year,
+        $link = config('app.app_url');
+
+        return sprintf(
+            now()->year. ' Made by <a href="%s" class="font-semibold text-primary" target="_blank">thekompetenz</a>',
+            $link,
+
         );
     }
     protected function getFooterMenu(): array

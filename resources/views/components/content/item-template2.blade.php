@@ -21,6 +21,8 @@
                     vk="{{ route(Route::current()->getName(), $item->slug) }}"
                     x="{{ route(Route::current()->getName(), $item->slug) }}"
                     whatsapp="{{ route(Route::current()->getName(), $item->slug) }}"
+                    instagram="{{ route(Route::current()->getName(), $item->slug) }}"
+                    tik_tok="{{ route(Route::current()->getName(), $item->slug) }}"
                 />
             </div>
 

@@ -1,0 +1,33 @@
+@media (max-width: 999px) {
+
+    .protection_data .protection_data__success .p_t_num {
+        font-size: 44px;
+        font-weight: 500;
+    }
+
+    .trusted_protection__options .t_p__flex .t_p__left .t_p__title,
+    .content_services-business .s_b__flex .s_b__left .s_b__wrap .s_b_categories a{
+        font-size: 32px !important;
+        line-height: 1.2em !important;
+        position: relative;
+    }
+    .trusted_protection__options .t_p__flex .t_p__left .t_p__more a,
+    .protection_data .protection_data__desc {
+
+        font-size: 20px;
+        font-weight: 400;
+
+    }
+
+}
+
+@media (max-width: 800px) {
+
+
+    .mySwiperHead .swiper-slide .swiper_content .swiper_desc p {
+        font-size: 20px;
+        font-weight: 400;
+
+    }
+
+}
