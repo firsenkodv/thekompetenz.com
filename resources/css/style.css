@@ -245,7 +245,7 @@ hr {
   font-size: 16px;
 }
 .desc h1 {
-  line-height: 2.3rem;
+  line-height: 1.3em;
   padding: 10px 0;
   font-weight: 700;
   font-style: normal;
@@ -338,17 +338,17 @@ hr {
 @media (max-width: 999px) {
   .h1 {
     font-size: 32px !important;
-    line-height: 1.2em !important;
+    line-height: 1.4em !important;
     position: relative;
   }
   .h2 {
     font-size: 32px !important;
-    line-height: 1.2em !important;
+    line-height: 1.3em !important;
     position: relative;
   }
   .h3 {
     font-size: 28px !important;
-    line-height: 1.2em !important;
+    line-height: 1.3em !important;
     position: relative;
   }
   .h4 {
