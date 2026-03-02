@@ -28,6 +28,7 @@ $colorOrange: #FF732C;
 
     .l_i__left {
         width: 35%;
+
         .l_i__wrap {
             display: flex;
             justify-content: space-between;
@@ -59,9 +60,11 @@ $colorOrange: #FF732C;
     .l_i__right {
         width: 60%;
         padding-left: 5%;
+
         .l_i__items {
             padding: 32px 0 0 0;
         }
+
         .l_i__item {
             padding-bottom: 16px;
             margin-bottom: 20px;
@@ -70,6 +73,7 @@ $colorOrange: #FF732C;
             text-decoration: none;
             display: block;
             transition: 0.2s;
+
             &a:hover {
                 color: $colorBlue2;
             }
@@ -87,12 +91,13 @@ $colorOrange: #FF732C;
                     line-height: 1.2em;
                     padding: 10px 0;
                 }
-p {
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.4em;
-    padding: 10px 0;
-}
+
+                p {
+                    font-size: 18px;
+                    font-weight: 300;
+                    line-height: 1.4em;
+                    padding: 10px 0;
+                }
 
             }
         }
@@ -109,16 +114,44 @@ p {
             border-bottom: 1px solid #F4F6F833;
 
         }
+
         .l_i__items {
 
 
         }
+
         .l_i__item {
             border-bottom: none;
             margin-bottom: 0;
+
             h2 {
                 padding-top: 20px !important;
             }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+
+    .content_latest_insights {
+
+        padding: 35px 0 20px 0;
+
+    }
+
+    .l_i__flex {
+        display: block;
+
+        .l_i__left {
+            width: 100%;
+            padding-bottom: 0;
+            height: auto;
+
+        }
+
+        .l_i__right {
+            width: 100%;
+            padding: 0;
         }
     }
 }

@@ -111,36 +111,23 @@ footer {
             justify-content: flex-end;
             align-items: center;
             gap: 30px;
+
             .f_menu {
                 min-height: 32px;
                 display: flex;
                 align-items: center;
                 gap: 20px;
+
                 a {
                     color: #0870D8;
                 }
             }
 
-            .f_social {
-                height: 32px;
-                display: flex;
-                gap: 10px;
 
-                a {
-                    width: 32px;
-                    min-width: 32px;
-                    height: 32px;
-                    background: #00000014;
-                    border-radius: 25px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                }
-            }
 
             .f_language {
                 height: 32px;
+
                 .f_language__flex {
                     width: 150px;
                     height: 32px;
@@ -150,6 +137,7 @@ footer {
                     align-items: center;
                     background: rgba(0, 0, 0, 0.0784313725);
                     border-radius: 12px;
+
                     div {
                         padding-left: 10px;
                     }
@@ -161,4 +149,163 @@ footer {
     }
 
 }
+.f_social {
+    height: 32px;
+    display: flex;
+    gap: 10px;
 
+    a {
+        width: 32px;
+        min-width: 32px;
+        height: 32px;
+        background: #00000014;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+@media (max-width: 1300px) {
+    footer {
+        .footer_flex {
+            display: block;
+            position: relative;
+
+            .footer_left {
+                width: 100%;
+                padding: 0 0 40px 0;
+
+            }
+
+            .footer_right {
+                width: 100%;
+                padding: 0 0 20px 0;
+
+                .f_flex {
+                    justify-content: center;
+                    gap: 40px;
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1220px) {
+    footer {
+        .footer_two {
+            width: 100%;
+            display: block;
+
+            .f_t_left {
+                width: 100%;
+                padding: 10px 0;
+                justify-content: center;
+            }
+
+            .f_t_right {
+
+                width: 100%;
+                padding: 10px 0;
+                justify-content: center;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 900px) {
+  
+    footer {
+        .logo_logo-footer-component {
+            text-align: center;
+        }
+
+        .f__title {
+            text-align: center;
+        }
+
+        .footer_flex {
+            padding-bottom: 10px;
+
+            .footer_right {
+                padding-bottom: 0;
+
+                .f_flex {
+                    display: block;
+
+                    .quick_link {
+                        width: 98% !important;
+                        border-radius: 30px !important;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+
+        }
+
+
+        .footer_two {
+            .f_t_right {
+                display: block;
+
+                .f_menu {
+                    display: block;
+                    width: 100%;
+                    padding: 0 0 10px 0;
+                    margin: 0;
+
+                    a {
+                        text-align: center;
+                        display: block;
+                        width: 100%;
+                        padding: 5px 0;
+                    }
+                }
+
+
+                .f_social {
+                    min-height: 34px;
+                    padding: 0;
+                    margin: 10px 0;
+                    justify-content: center;
+                }
+
+                .f_language {
+                    width: 100%;
+                    padding: 0;
+                    margin: 20px 0 10px 0;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 668px) {
+    footer {
+        .footer_flex {
+
+
+            .footer_right {
+                padding-bottom: 0;
+
+                .f_flex {
+                    display: block;
+
+                    .quick_link {
+                        padding: 20px 20px 30px 20px !important;
+                        height: auto !important;
+                        width: 98% !important;
+                        border-radius: 90px !important;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+
+        }
+    }
+}

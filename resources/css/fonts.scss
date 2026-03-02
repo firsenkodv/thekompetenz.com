@@ -6,13 +6,23 @@
     }
 
     .trusted_protection__options .t_p__flex .t_p__left .t_p__title,
-    .content_services-business .s_b__flex .s_b__left .s_b__wrap .s_b_categories a{
+    .content_services-business .s_b__flex .s_b__left .s_b__wrap .s_b_categories a,
+    .l_i__flex .l_i__left .l_i__wrap .l_i__title,
+    .content_personal-profile .p_p_title,
+    .content_vacancies .v__flex .v__left .v__title,
+    footer .footer_flex .footer_left .f__title
+
+    {
         font-size: 32px !important;
         line-height: 1.2em !important;
         position: relative;
     }
     .trusted_protection__options .t_p__flex .t_p__left .t_p__more a,
-    .protection_data .protection_data__desc {
+    .protection_data .protection_data__desc,
+    .l_i__flex .l_i__left .l_i__wrap .l_i_more a,
+    .l_i__flex .l_i__right .l_i__item .l_i_short_desc h2,
+    .content_vacancies .v__flex .v__text
+    {
 
         font-size: 20px;
         font-weight: 400;

@@ -70,9 +70,6 @@ class HeaderMenuComponent extends Component
             $menu[5]['parent'] = false;
 
 
-
-
-
         return $menu;
     }
 

@@ -11,6 +11,8 @@
 @import 'components/content/feedback-form.scss';
 @import 'components/menu/header-menu-component.scss';
 @import 'components/menu/menu_menu-horizontal.scss';
+@import 'components/menu/menu_hamburger-component.scss';
+@import 'components/menu/menu_hamburger-show-component.scss';
 @import 'components/content/trusted-protection.scss';
 @import 'components/content/services-business.scss';
 @import 'components/content/latest-insights.scss';
@@ -24,6 +26,7 @@
 @import 'components/content/social-zone.scss';
 @import 'components/content/content-faq.scss';
 @import 'components/buttons/buttons.scss';
+@import 'components/logo/logo-component.scss';
 
 @import 'templates/axeld/swiper.scss';
 @import 'components/form/form-input-component.scss';

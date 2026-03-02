@@ -198,8 +198,10 @@
 }
 @media (max-width: 900px) {
   .block_header .block_header__left {
-    width: 200px;
-    min-width: 200px;
+    width: 280px;
+    min-width: 280px;
+    display: flex;
+    align-items: center;
   }
   .block_header .block_header__center {
     width: 0;
@@ -238,6 +240,12 @@
   }
 }
 @media (max-width: 468px) {
+  .block_header .block_header__left {
+    width: 230px;
+    min-width: 1px;
+    display: flex;
+    align-items: center;
+  }
   .sw-pagination {
     justify-content: start;
     padding-left: 10px;

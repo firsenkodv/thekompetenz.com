@@ -53,3 +53,36 @@ $colorOrange: #FF732C;
     }
 
 }
+
+@media (max-width: 900px) {
+
+    .content_vacancies {
+        .v__flex {
+            display: block;
+            color: #fff;
+            .v__left {
+                width: 100%;
+                min-height: 1px;
+                padding:40px 0 10px 0;
+
+            }
+            .v__right {
+                width: 100%;
+                min-height: 1px;
+                padding: 0;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 794px) {
+    .vacancies {
+        background-position: 83% 0;
+    }
+    .content_vacancies {
+        .v__flex {
+            padding-top: 50px;
+        }
+    }
+}

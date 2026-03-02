@@ -20,6 +20,7 @@
     <meta name="keywords" content="@yield('keywords',  config('seo.seo.keywords'))"/>
 </head>
 <body>
+<x-menu.hamburger-show-component />
 <div id="back-to-top"></div>
   {!!  config('google.google_tag.body') !!}
     <div class="content_  @yield('class')  {{ route_name() }}" >

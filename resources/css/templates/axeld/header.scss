@@ -255,8 +255,10 @@ $colorOrange: #FF732C;
     .block_header {
 
         .block_header__left {
-            width: 200px;
-            min-width: 200px;
+            width: 280px;
+            min-width: 280px;
+            display: flex;
+            align-items: center;
         }
 
         .block_header__center {
@@ -307,7 +309,17 @@ $colorOrange: #FF732C;
     }
 }
 @media (max-width: 468px) {
-    .sw-pagination {
+    .block_header {
+
+        .block_header__left {
+            width: 230px;
+            min-width: 1px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+        .sw-pagination {
         justify-content: start;
         padding-left: 10px;
          .swiper-button-next {

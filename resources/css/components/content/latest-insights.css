@@ -92,4 +92,22 @@
   padding-top: 20px !important;
 }
 
+@media (max-width: 900px) {
+  .content_latest_insights {
+    padding: 35px 0 20px 0;
+  }
+  .l_i__flex {
+    display: block;
+  }
+  .l_i__flex .l_i__left {
+    width: 100%;
+    padding-bottom: 0;
+    height: auto;
+  }
+  .l_i__flex .l_i__right {
+    width: 100%;
+    padding: 0;
+  }
+}
+
 /*# sourceMappingURL=latest-insights.css.map */

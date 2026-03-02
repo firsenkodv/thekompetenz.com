@@ -38,4 +38,29 @@
   padding: 0 0 16px 0;
 }
 
+@media (max-width: 900px) {
+  .content_vacancies .v__flex {
+    display: block;
+    color: #fff;
+  }
+  .content_vacancies .v__flex .v__left {
+    width: 100%;
+    min-height: 1px;
+    padding: 40px 0 10px 0;
+  }
+  .content_vacancies .v__flex .v__right {
+    width: 100%;
+    min-height: 1px;
+    padding: 0;
+  }
+}
+@media (max-width: 794px) {
+  .vacancies {
+    background-position: 83% 0;
+  }
+  .content_vacancies .v__flex {
+    padding-top: 50px;
+  }
+}
+
 /*# sourceMappingURL=vacancies.css.map */

@@ -54,3 +54,52 @@ $colorOrange: #FF732C;
 
     }
 }
+
+@media (max-width: 1200px) {
+    .content_personal-profile {
+        .p_p_ipad {
+            background-size: contain;
+            height: 400px;
+
+        }
+    }
+}
+
+@media (max-width: 999px) {
+    .content_personal-profile {
+        .p_p_ipad {
+            background-size: contain;
+            height: 300px;
+
+        }
+    }
+}
+@media (max-width: 668px) {
+    .content_personal-profile {
+        .p_p_ipad {
+            background-size: contain;
+            height: 250px;
+
+        }
+
+        .p_p_buttons {
+            padding: 15px 0 0 0;
+            display: block;
+            a {
+                display: block;
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 468px) {
+    .content_personal-profile {
+        .p_p_ipad {
+            background-size: contain;
+            height: 200px;
+
+        }
+
+    }
+}

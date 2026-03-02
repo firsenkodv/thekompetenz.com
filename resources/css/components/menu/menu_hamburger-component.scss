@@ -1,0 +1,54 @@
+
+.menu_hamburger-component {
+    display: none;
+}
+
+@media (max-width: 900px) {
+
+    .hamburger-element {
+        width: 28px;
+        min-width: 28px;
+        height: 28px;
+        margin-right: 10px;
+        background-size: contain;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQgOC41SDIwTTQgMTUuNUgyMCIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K');
+
+    }
+    .menu_hamburger-component {
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        position: relative;
+        display: block;
+        ul {
+            padding: 30px 0;
+            li {
+                a {
+                    display: block;
+                    font-size: 19px;
+                    text-align: center;
+                    color: #fff;
+                    text-decoration: none;
+                    width: 100%;
+                    padding: 10px 0;
+                    position: relative;
+                }
+            }
+        }
+    }
+
+
+
+}
+
+@media (max-width: 468px) {
+
+    .hamburger-element {
+        width: 24px;
+        min-width: 24px;
+        height: 24px;
+    }
+    .menu_hamburger-component {
+        position: relative;
+    }
+}
