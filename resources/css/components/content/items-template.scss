@@ -133,9 +133,38 @@ $colorOrange: #FF732C;
     }
 }
 
+@media screen and (max-width: 794px) {
+    .content_items-template2 {
+        .more {
+            padding: 15px 0 10px 0;
+            height: auto;
+            display: block;
+
+        }
+        .content_item2__flex {
+            display: block !important;
+
+            .content_item2__right {
+                .ci2__flex_direction {
+                    padding:20px 0 0  0 !important;
+
+                }
+            }
+
+        }
+    }
+
+}
+
 @media screen and (max-width: 720px) {
     .content_item {
         min-height: 1px;
+    }
+    .content-website {
+        padding: 20px 0 20px 0;
+        .trusted_protection__slider {
+            padding: 20px 0 10px 0;
+        }
     }
 }
 

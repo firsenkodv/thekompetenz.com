@@ -31,6 +31,9 @@
     padding: 10px 0;
     position: relative;
   }
+  .menu_hamburger-component ul li.active a {
+    text-decoration: underline;
+  }
 }
 @media (max-width: 468px) {
   .hamburger-element {

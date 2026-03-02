@@ -26,7 +26,6 @@
     <div class="content_  @yield('class')  {{ route_name() }}" >
         <x-message.message/>
         <x-message.message_error/>
-
 @yield('content')
 </div><!--.content_-->
  @include('templates.axeld.footer')

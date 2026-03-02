@@ -8,6 +8,7 @@
     backdrop-filter: blur(16px);
     top: 0;
     left: 0;
+    overflow-y: auto;
 
     .h_m_top {
         height: 76px;
@@ -65,6 +66,12 @@
         }
     }
 }
+
+/* Когда меню открыто */
+body.menu-open {
+    overflow: hidden;   /* запрет прокрутки окна браузера */
+}
+
 
 @media (max-width: 900px) {
 

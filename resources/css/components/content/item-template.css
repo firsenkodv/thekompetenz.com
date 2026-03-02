@@ -59,4 +59,23 @@
   border-radius: 2px;
 }
 
+@media (max-width: 900px) {
+  .content_item-template {
+    position: relative;
+    padding: 20px 0 0 0;
+  }
+  .content_item-template .content_item__flex {
+    display: block;
+    width: 100%;
+  }
+  .content_item-template .content_item__flex .content_item__left {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .content_item-template .content_item__flex .content_item__right {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+
 /*# sourceMappingURL=item-template.css.map */

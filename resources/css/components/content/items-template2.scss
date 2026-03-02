@@ -88,3 +88,9 @@ $colorOrange: #FF732C;
         color: #0870D8;
     }
 }
+
+@media (max-width: 900px) {
+    .content_item-template.content_item-template3 {
+        padding-top: 0 !important;
+    }
+}

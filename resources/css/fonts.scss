@@ -10,18 +10,27 @@
     .l_i__flex .l_i__left .l_i__wrap .l_i__title,
     .content_personal-profile .p_p_title,
     .content_vacancies .v__flex .v__left .v__title,
-    footer .footer_flex .footer_left .f__title
-
+    footer .footer_flex .footer_left .f__title,
+    .seo_title h1,
+    .content_item-template ._44,
+    .desc h2,
+    .content_items-template4 .item4 .item4__flex .item4__right .title a,
+    .solution_category .title h1,
+    .t_p__title,
+    .content_items-template5 .item5 .item5__flex .item5__left .address
     {
         font-size: 32px !important;
         line-height: 1.2em !important;
         position: relative;
     }
+
     .trusted_protection__options .t_p__flex .t_p__left .t_p__more a,
     .protection_data .protection_data__desc,
     .l_i__flex .l_i__left .l_i__wrap .l_i_more a,
     .l_i__flex .l_i__right .l_i__item .l_i_short_desc h2,
-    .content_vacancies .v__flex .v__text
+    .content_vacancies .v__flex .v__text,
+    .solution_category .short_desc,
+    .content_items-template5 .item5 .item5__flex .item5__left .country
     {
 
         font-size: 20px;
@@ -31,11 +40,26 @@
 
 }
 
+
+
 @media (max-width: 800px) {
 
 
-    .mySwiperHead .swiper-slide .swiper_content .swiper_desc p {
-        font-size: 20px;
+    .mySwiperHead .swiper-slide .swiper_content .swiper_desc p ,
+    .mySwiperCarouselCentered .swiper-slide .sw-content .__more,
+    {
+        font-size: 20px !important;
+        font-weight: 400;
+
+    }
+
+    .content_items-template4 .item4 .item4__flex .item4__right .title a
+    {
+        font-size: 24px !important;
+        font-weight: 400;
+
+    }  .mySwiperCarouselCentered .swiper-slide .sw-content .__title {
+        font-size: 28px;
         font-weight: 400;
 
     }

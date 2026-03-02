@@ -11,5 +11,6 @@ export function mobile() {
         const hMenu = document.querySelector('.app_h_menu');
         hMenu.classList.toggle('active');
         slideToggle(document.querySelector('.app_h_menu'), 400);
+        document.body.classList.toggle('menu-open');
     }
 }

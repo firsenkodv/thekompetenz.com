@@ -69,4 +69,23 @@
   padding-bottom: 10px;
 }
 
+@media (max-width: 900px) {
+  .content_items-template5 .item5 .item5__flex .item5__left {
+    padding-right: 30px;
+  }
+}
+@media (max-width: 742px) {
+  .content_items-template5 .item5 .item5__flex {
+    display: block !important;
+  }
+  .content_items-template5 .item5 .item5__flex .item5__left {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .content_items-template5 .item5 .item5__flex .item5__right {
+    padding: 10px 0;
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=items-template5.css.map */

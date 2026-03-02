@@ -37,6 +37,8 @@
   justify-content: flex-end;
   max-width: 840px;
   margin: auto;
+  position: relative;
+  z-index: 9;
 }
 .header_background_about-us .about-us-data .h2 {
   width: 100%;
@@ -202,6 +204,8 @@
     min-width: 280px;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 10;
   }
   .block_header .block_header__center {
     width: 0;
@@ -209,6 +213,35 @@
   }
   .block_header .block_header__right {
     width: auto;
+  }
+  .header_background.template-blue {
+    height: auto;
+    min-height: 168px;
+  }
+  .header_background_top_img,
+  .header_background_about-us {
+    height: auto;
+    min-height: 400px;
+  }
+  .header_background_top_img #background-video,
+  .header_background_about-us #background-video {
+    height: 100%;
+  }
+  .header_background_about-us:before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: rgba(0, 0, 61, 0.4);
+    z-index: 9;
+  }
+  .header_background_about-us .about-us-data {
+    padding: 20px 0;
+  }
+  .header_background_about-us .about-us-data .h2 {
+    padding-bottom: 10px !important;
   }
 }
 @media (max-width: 668px) {

@@ -32,4 +32,36 @@
   border-bottom: 2px solid #000;
 }
 
+@media (max-width: 968px) {
+  .menu-hor-wrap {
+    position: relative;
+    border-bottom: none;
+  }
+  .menu_menu-horizontal {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .menu_menu-horizontal li {
+    position: relative;
+    height: 50px;
+  }
+  .menu_menu-horizontal a {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6E6E6E;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    border-bottom: 2px solid #eee;
+  }
+  .menu_menu-horizontal li.active a {
+    color: #000;
+    border-bottom: 2px solid #000;
+  }
+}
+
 /*# sourceMappingURL=menu_menu-horizontal.css.map */

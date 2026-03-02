@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .h-menu {
   display: none;
   width: 100%;
@@ -8,6 +9,7 @@
   backdrop-filter: blur(16px);
   top: 0;
   left: 0;
+  overflow-y: auto;
 }
 .h-menu .h_m_top {
   height: 76px;
@@ -53,6 +55,11 @@
   display: block;
   text-align: center;
   padding: 3px 0;
+}
+
+/* Когда меню открыто */
+body.menu-open {
+  overflow: hidden; /* запрет прокрутки окна браузера */
 }
 
 /*# sourceMappingURL=menu_hamburger-show-component.css.map */

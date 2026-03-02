@@ -425,6 +425,12 @@ img {
         line-height: 1.2em !important;
         position: relative;
     }
+    .desc {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
 }
 
 @media screen and (max-width: 794px) {
