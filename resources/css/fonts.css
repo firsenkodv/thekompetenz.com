@@ -11,6 +11,7 @@
   footer .footer_flex .footer_left .f__title,
   .seo_title h1,
   .content_item-template ._44,
+  .desc h1,
   .desc h2,
   .content_items-template4 .item4 .item4__flex .item4__right .title a,
   .solution_category .title h1,
@@ -19,6 +20,9 @@
     font-size: 32px !important;
     line-height: 1.2em !important;
     position: relative;
+  }
+  .desc h3 {
+    font-size: 28px !important;
   }
   .trusted_protection__options .t_p__flex .t_p__left .t_p__more a,
   .protection_data .protection_data__desc,
