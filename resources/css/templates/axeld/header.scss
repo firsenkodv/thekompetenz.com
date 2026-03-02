@@ -114,6 +114,8 @@ $colorOrange: #FF732C;
 
     .block_header__left {
         width: 20%;
+        position: relative;
+        z-index: 5;
 
         .logo {
             position: relative;
