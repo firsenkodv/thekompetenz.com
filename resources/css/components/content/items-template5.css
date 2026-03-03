@@ -55,6 +55,24 @@
   text-decoration: none;
   color: #6E6E6E;
 }
+.content_items-template5 .item5 .item5__flex .item5__left .phone {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2em;
+  padding: 7px 0 10px 0;
+  text-decoration: none;
+  color: #00003D;
+}
+.content_items-template5 .item5 .item5__flex .item5__left .email {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2em;
+  padding: 0 0 10px 0;
+  text-decoration: none;
+  color: #6E6E6E;
+}
 .content_items-template5 .item5 .item5__flex .item5__right {
   padding-bottom: 17px;
 }
