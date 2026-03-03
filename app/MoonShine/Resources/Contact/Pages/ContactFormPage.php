@@ -70,6 +70,8 @@ class ContactFormPage extends FormPage
                                     Text::make('Office', 'office')->unescape()->default('Office'),
                                     Text::make('Address', 'address')->unescape(),
                                     Text::make('Country', 'country')->unescape(),
+                                    Text::make('Email', 'email')->unescape(),
+                                    Text::make('Phone', 'phone')->unescape(),
                                 ]),
 
                             ])->columnSpan(6),

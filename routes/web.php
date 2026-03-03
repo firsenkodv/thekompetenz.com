@@ -86,6 +86,7 @@ Route::controller(ContactController::class)->group(function () {
 /** Форма обратной связи */
 Route::controller(FeedbackFormController::class)->group(function () {
     Route::post('/feedback.form.businesses', 'feedbackFormBusiness')->name('feedback.form.business');
+    Route::post('/feedback.form.contacts', 'feedbackFormContacts')->name('feedback.form.contacts');
 });
 /** ///Форма обратной связи */
 

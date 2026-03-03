@@ -12,7 +12,7 @@ class ContactController extends Controller
     public function index():View
     {
        $items = ContactViewModel::make()->contacts();
-       return view('contacts.items', compact('items'));
+       return view('pages.contacts.items', compact('items'));
     }
 
     public function search(Request $request):View
@@ -20,7 +20,7 @@ class ContactController extends Controller
 
         $value = trim($request->search);
         $items = ContactViewModel::make()->search($value);
-        return view('contacts.items', compact('items', 'value'));
+        return view('pages.contacts.items', compact('items', 'value'));
 
 
     }

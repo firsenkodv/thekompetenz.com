@@ -30,5 +30,6 @@
             <x-content.vacancies />
         </div>
     </section>
+
 @endsection
 

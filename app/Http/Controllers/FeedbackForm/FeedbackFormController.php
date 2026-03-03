@@ -24,4 +24,14 @@ class FeedbackFormController extends Controller
         return redirect()->back();
     }
 
+    public function feedbackFormContacts(Request $request):RedirectResponse
+    {
+        $data = $request->only('type_insurance', 'company', 'name', 'phone', 'email');
+
+        FeedbackFormBusinessEvent::dispatch($data);
+        flash()->info(config('message_flash.info.feedback_form_success'));
+
+        return redirect()->back();
+    }
+
 }

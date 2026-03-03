@@ -38,6 +38,8 @@ class ContactIndexPage extends IndexPage
             Image::make('Flag', 'flag'),
             Text::make('Address', 'address')->updateOnPreview(),
             Text::make('Country', 'country')->updateOnPreview(),
+            Text::make('Email', 'email')->updateOnPreview(),
+            Text::make('Phone', 'phone')->updateOnPreview(),
             Switcher::make('Published', 'published')->updateOnPreview(),
             Text::make('Sorting', 'sorting')->updateOnPreview(),
 
