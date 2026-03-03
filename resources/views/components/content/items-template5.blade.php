@@ -19,8 +19,8 @@
                         </div>
                         <div class="address">{{ $item->address }}</div>
                         <div class="country">{{ $item->country }}</div>
-                        <div class="phone">{{ format_phone($item->phone) }}</div>
-                        <div class="email">{{ $item->email }}</div>
+          {{--              <div class="phone">{{ format_phone($item->phone) }}</div>
+                        <div class="email">{{ $item->email }}</div>--}}
                     </div>
                     <div class="item5__right content_item__right">
 
