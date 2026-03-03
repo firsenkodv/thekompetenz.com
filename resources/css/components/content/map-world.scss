@@ -1,0 +1,19 @@
+.map_world {
+    background: rgba(0, 0, 61, 1);
+    .content_map-world {
+
+        text-align: center;
+    }
+}
+
+@media (max-width: 1440px) {
+    .content_map-world {
+        img {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+
+    }
+}

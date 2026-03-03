@@ -48,9 +48,11 @@ $colorOrange: #FF732C;
                         text-decoration: none;
                         color: #0870D8;
                     }
+
                     .title3 {
                         padding-bottom: 7px;
                     }
+
                     .subtitle3 {
                         color: $colorGrey;
                         font-size: 24px;
@@ -84,6 +86,7 @@ $colorOrange: #FF732C;
     padding: 5px 0 0 0;
     font-weight: 700;
     line-height: 1.2em;
+
     .blue-light {
         color: #0870D8;
     }
@@ -92,5 +95,8 @@ $colorOrange: #FF732C;
 @media (max-width: 900px) {
     .content_item-template.content_item-template3 {
         padding-top: 0 !important;
+    }
+    .content_items.content_items-template2 {
+        padding-bottom: 0;
     }
 }

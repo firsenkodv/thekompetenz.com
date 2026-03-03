@@ -62,6 +62,9 @@
   .content_item-template.content_item-template3 {
     padding-top: 0 !important;
   }
+  .content_items.content_items-template2 {
+    padding-bottom: 0;
+  }
 }
 
 /*# sourceMappingURL=items-template2.css.map */

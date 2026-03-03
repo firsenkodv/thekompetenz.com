@@ -17,10 +17,12 @@
     </section>
     <section class="content-website">
         <div class="block relative">
-
             <x-content.items-template3 :items="$items"  />
-
-
+        </div>
+    </section>
+    <section class="map_world">
+        <div class="block relative">
+            <x-content.mapworld />
         </div>
     </section>
     <section class="vacancies">

@@ -28,8 +28,8 @@ $colorOrange: #FF732C;
     padding-right: 20px;
 
     &:hover {
-        border: 1px solid $colorBlue2;
-        background: $colorBlue2;
+        border: 1px solid $colorBlue;
+        background: $colorBlue;
         color: #fff;
 
     }
@@ -45,9 +45,9 @@ $colorOrange: #FF732C;
 }
 
 .btn.btn_white:hover {
-    background: $colorBlue2;
+    background: $colorBlue;
     border-radius: 36px;
-    border: 1px solid $colorBlue2;
+    border: 1px solid $colorBlue;
     color: #fff;
 
 }

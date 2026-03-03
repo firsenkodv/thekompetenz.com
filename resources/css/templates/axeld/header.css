@@ -26,6 +26,16 @@
   overflow: hidden; /* Скрывает любые выходящие элементы */
   z-index: 1;
 }
+.header_background_about-us:before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-color: rgba(0, 0, 61, 0.4);
+  z-index: 9;
+}
 .header_background_about-us #background-video {
   position: absolute;
 }
@@ -95,7 +105,7 @@
 .block_header .block_header__left {
   width: 20%;
   position: relative;
-  z-index: 5;
+  z-index: 10;
 }
 .block_header .block_header__left .logo {
   position: relative;
@@ -228,16 +238,6 @@
   .header_background_top_img #background-video,
   .header_background_about-us #background-video {
     height: 100%;
-  }
-  .header_background_about-us:before {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    background-color: rgba(0, 0, 61, 0.4);
-    z-index: 9;
   }
   .header_background_about-us .about-us-data {
     padding: 20px 0;
