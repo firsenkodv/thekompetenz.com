@@ -7,9 +7,7 @@
         <!-- Остальной контент -->
         <div class="block_header block">
             <div class="block_header__left">
-                <div class="hamburger">
-                    <div class="hamburger-element app_open_menu"></div>
-                </div>
+                <x-menu.hamburger-html-component />
                 <x-logo.logo-component :route-name="route_name()"/>
             </div>
             <div class="block_header__center">
