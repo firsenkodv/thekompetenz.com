@@ -68,6 +68,8 @@ Route::controller(SolutionPageController::class)->group(function () {
     Route::get('/solutions', 'categories')->name('categories.solutions');
     Route::get('/solutions/{solution_category:slug}', 'items')->name('items.solutions');
     Route::get('/solutions/{solution_category:slug}/{solution_item:slug}', 'item')->name('item.solutions');
+    Route::post('/solutions/search', 'search')->name('solution.search');
+
 });
 /** ///Решения */
 

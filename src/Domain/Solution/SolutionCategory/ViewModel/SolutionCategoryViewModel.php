@@ -3,6 +3,7 @@
 namespace Domain\Solution\SolutionCategory\ViewModel;
 
 use App\Models\SolutionCategory;
+use App\Models\SolutionTag;
 use App\Models\Work;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\Cache;
@@ -22,6 +23,25 @@ class SolutionCategoryViewModel
         });
 
     }
+    public function tags():?Collection
+    {
+            return SolutionTag::query()
+                ->orderBy('created_at', 'desc')
+                ->get();
 
+    }
+
+    public function search($request):?Collection
+    {
+        $sorting = (isset($request['sorting'])) ? ($request['sorting'] == 'Recently added')? 'desc' : 'asc' : 'desc';
+        return SolutionCategory::whereHas('solutionTags', function ($query) use ($request) {
+            if (isset($request['tag'])) {
+                $query->where('solution_tags.title', $request['tag']); // фильтр по нужному тегу
+            }
+        })
+            ->orderBy('created_at', $sorting)
+            ->get();
+
+    }
 
 }

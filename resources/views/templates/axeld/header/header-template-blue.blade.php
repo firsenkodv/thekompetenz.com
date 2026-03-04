@@ -29,6 +29,7 @@
             <h1>@yield('title_h1')</h1>
             <div>@yield('subtitle_div')</div>
             <div>@yield('filter_contact')</div>
+            <div>@yield('filter_solution')</div>
         </div>
 </div>
     </div>

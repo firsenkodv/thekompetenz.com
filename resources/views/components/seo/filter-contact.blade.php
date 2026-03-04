@@ -1,6 +1,6 @@
 @props(['value'])
 @section('filter_contact')
-    <div class="f_contact">
+    <div class="f_contact f_wrap">
         <div class="f_contact-feedback-form">
             <x-form.form
                 method="POST"

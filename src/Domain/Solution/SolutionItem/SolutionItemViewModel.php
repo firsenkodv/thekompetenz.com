@@ -2,8 +2,10 @@
 
 namespace Domain\Solution\SolutionItem;
 
+use App\Models\Contact;
 use App\Models\SolutionCategory;
 use App\Models\SolutionItem;
+use App\Models\SolutionTag;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\Cache;
 use Support\Traits\Makeable;
@@ -22,6 +24,8 @@ class SolutionItemViewModel
                 ->get();
 
     }
+
+
 
 
 }

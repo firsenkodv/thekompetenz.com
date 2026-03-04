@@ -19,8 +19,8 @@
                         </div>
                         <div class="address">{{ $item->address }}</div>
                         <div class="country">{{ $item->country }}</div>
-          {{--              <div class="phone">{{ format_phone($item->phone) }}</div>
-                        <div class="email">{{ $item->email }}</div>--}}
+                        <div class="phone">{{ format_phone($item->phone) }}</div>
+                        <div class="email">{{ $item->email }}</div>
                     </div>
                     <div class="item5__right content_item__right">
 
@@ -38,9 +38,9 @@
                                     balloonContent: '<h5>{{ $item->map_array['title'] }}</h5><p class="jt_ph">{{ $item->map_array['phone'] }}</p> <p class="jt_ph">{{ $item->map_array['email'] }}</p>'
                                 }, {
                                     iconLayout: 'default#image',
-                                    iconImageHref: '/storage/contacts/myIcon.svg',
-                                    iconImageSize: [58, 55],
-                                    iconImageOffset: [-28, -48]
+                                    iconImageHref: '/storage/contacts/logo_map.png',
+                                    iconImageSize: [184, 89],
+                                    iconImageOffset: [-95, -75]
                                 });
 
                                 myMap.geoObjects.add(myPlacemark);
