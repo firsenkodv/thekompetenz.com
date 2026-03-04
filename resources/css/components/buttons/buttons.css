@@ -42,6 +42,7 @@
 @media screen and (max-width: 478px) {
   .btn {
     height: 46px;
+    line-height: 46px;
   }
 }
 

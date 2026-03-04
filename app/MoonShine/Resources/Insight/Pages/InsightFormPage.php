@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace App\MoonShine\Resources\Insight\Pages;
 
+use App\MoonShine\Resources\InsightTag\InsightTagResource;
+use App\MoonShine\Resources\SolutionTag\SolutionTagResource;
+use Illuminate\Contracts\Database\Eloquent\Builder;
+use MoonShine\Laravel\Fields\Relationships\BelongsToMany;
 use MoonShine\Laravel\Fields\Slug;
 use MoonShine\Laravel\Pages\Crud\FormPage;
 use MoonShine\Contracts\UI\ComponentContract;
@@ -21,6 +25,7 @@ use MoonShine\UI\Components\Layout\Grid;
 use MoonShine\UI\Components\Tabs;
 use MoonShine\UI\Components\Tabs\Tab;
 use MoonShine\UI\Fields\Date;
+use MoonShine\UI\Fields\Field;
 use MoonShine\UI\Fields\ID;
 use MoonShine\UI\Components\Layout\Box;
 use MoonShine\UI\Fields\Image;
@@ -92,6 +97,9 @@ class InsightFormPage extends FormPage
                                     Switcher::make('Feedback Form', 'form')->default(1),
                                     Number::make('Sorting', 'sorting')->buttons()->default(0),
 
+                                    BelongsToMany::make('Tags', 'insightTags', 'title', resource: InsightTagResource::class)
+                                        ->valuesQuery(fn(Builder $query, Field $field) => $query->orderBy('created_at', 'DESC'))
+                                        ->nullable()->creatable(),
                                     Date::make(__('Дата создания'), 'created_at')
                                         ->format("d.m.Y")
                                         ->default(now()->toDateTimeString())

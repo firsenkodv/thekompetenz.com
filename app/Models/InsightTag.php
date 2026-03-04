@@ -5,24 +5,20 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
-class Insight extends Model
+class InsightTag extends Model
 {
-    protected $table = 'insights';
+    protected $table = 'insight_tags';
     protected $guarded = [];
 
     protected $casts = [
         'params' => 'collection',
-        'gallery' => 'collection',
-        'faq' => 'collection',
-        'files' => 'collection',
     ];
 
-    public function insightTags(): BelongsToMany
+    public function insight():BelongsToMany
     {
-        return $this->belongsToMany(InsightTag::class);
+        return $this->belongsToMany(Insight::class);
 
     }
-//insightTags
 
     protected static function boot(): void
     {
@@ -39,5 +35,4 @@ class Insight extends Model
 
 
     }
-
 }

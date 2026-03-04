@@ -19,7 +19,11 @@
                         {!!  config2('moonshine.insight.desc') !!}
                     </div>
                 @endif
-            <x-content.items-template2 :items="$items" route="for.insight"  />
+            <x-content.items-template2 :items="$items"
+                                       route="for.insight"
+                                       :value_sorting="(isset($value_sorting)) ? $value_sorting : ''"
+                                       :value_tag="(isset($value_tag)) ? $value_tag : ''"
+            />
 
                 @if(config2('moonshine.insight.desc2'))
                     <div class="description_2 desc">

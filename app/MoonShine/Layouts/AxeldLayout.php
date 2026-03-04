@@ -30,6 +30,7 @@ use App\MoonShine\Resources\SolutionCategory\SolutionCategoryResource;
 use App\MoonShine\Resources\SolutionItem\SolutionItemResource;
 use App\MoonShine\Resources\SolutionTag\SolutionTagResource;
 use App\MoonShine\Resources\Contact\ContactResource;
+use App\MoonShine\Resources\InsightTag\InsightTagResource;
 
 final class AxeldLayout extends AppLayout
 {
@@ -63,6 +64,7 @@ final class AxeldLayout extends AppLayout
 
                             ]),
                 MenuGroup::make(static fn() => __('Business Ideas'), [
+                    MenuItem::make(InsightTagResource::class, 'InsightTags', 'tag'),
                     MenuItem::make(InsightPage::class, 'Insight', 'arrow-right-end-on-rectangle'),
                     MenuItem::make(InsightResource::class, 'Insights', 'sparkles'),
                     ]),

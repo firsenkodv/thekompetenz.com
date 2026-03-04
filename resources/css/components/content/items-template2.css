@@ -58,12 +58,34 @@
   color: #0870D8;
 }
 
+/** filter vertical **/
+.f_insight .title {
+  font-size: 20px;
+  padding: 0 0 20px 0;
+}
+.f_insight .f_insight__left {
+  max-width: 380px;
+}
+.f_insight .f_insight__center {
+  max-width: 380px;
+}
+.f_insight .f_insight__right {
+  padding: 10px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/** ////filter vertical **/
 @media (max-width: 900px) {
   .content_item-template.content_item-template3 {
     padding-top: 0 !important;
   }
   .content_items.content_items-template2 {
     padding-bottom: 0;
+  }
+  .f_insight {
+    padding-bottom: 20px;
   }
 }
 

@@ -6,9 +6,14 @@ use App\Http\Controllers\FeedbackForm\FeedbackFormController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Individual\IndividualPageController;
 use App\Http\Controllers\Insight\InsightPageController;
+use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\Solution\SolutionPageController;
 use App\Http\Controllers\Work\WorkPageController;
 use Illuminate\Support\Facades\Route;
+
+
+
+Route::get('/sitemap', [SitemapController::class, 'sitemap' ])->name('sitemap');
 
 /**
  * админка
@@ -60,6 +65,7 @@ Route::controller(IndividualPageController::class)->group(function () {
 Route::controller(InsightPageController::class)->group(function () {
     Route::get('/insights', 'index')->name('for.insights');
     Route::get('/insights/{insight:slug}', 'show')->name('for.insight');
+    Route::post('/insights/search', 'search')->name('insight.search');
 });
 /** ///Идеи */
 
@@ -91,4 +97,3 @@ Route::controller(FeedbackFormController::class)->group(function () {
     Route::post('/feedback.form.contacts', 'feedbackFormContacts')->name('feedback.form.contacts');
 });
 /** ///Форма обратной связи */
-

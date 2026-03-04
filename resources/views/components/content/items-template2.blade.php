@@ -1,10 +1,17 @@
 @props([
     'route',
+    'value_sorting',
+    'value_tag'
 ])
 <div class="content_item-template">
     <div class="content_item__flex">
         <div class="content_item__left">
-           {{-- Форма--}}
+            <x-seo.filter-insight
+                :items="$items"
+                :value_sorting="(isset($value_sorting)) ? $value_sorting : ''"
+                :value_tag="(isset($value_tag)) ? $value_tag : ''"
+            />
+
         </div>
         <div class="content_item__right">
             <div class="content_items content_items-template2">
