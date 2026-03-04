@@ -30,8 +30,8 @@
                         />
                     </div>
                     <div class="f_solution__right">
-                        <x-form.form-button type="submit">Отправить</x-form.form-button>
-                        <x-buttons.button-component class="btn btn_white" :href="route('categories.solutions')">Сброс</x-buttons.button-component>
+                        <x-form.form-button type="submit">Search</x-form.form-button>
+                        <x-buttons.button-component class="btn btn_white" :href="route('categories.solutions')">Reset</x-buttons.button-component>
                     </div>
                 </div>
 

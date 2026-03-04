@@ -35,7 +35,7 @@
 
 
         <div class="search-box">
-            <input type="text" placeholder="Поиск..." />
+            <input type="text" placeholder="Search..." />
         </div>
 
         <div class="display_none">
