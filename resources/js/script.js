@@ -5,7 +5,7 @@ import {select} from "./include/select/select";
 import {flash_message} from "./include/flash_message/flash_message";
 import {content_faq} from "./include/site/content_faq";
 import {mobile} from "./include/mobile/mobile";
-import {scroll} from "./include/site/scroll.js";
+import {scroll} from "./include/site/scroll";
 
 
 document.addEventListener('DOMContentLoaded', function () {
