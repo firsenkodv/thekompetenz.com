@@ -28,18 +28,14 @@
             </div>
         </div>
         <div class="footer_two">
-
             <x-footer.copy/>
-
             <div class="f_t_right">
 
                 <x-footer.menu/>
                 <x-social.social-footer/>
 
                 <div class="f_language">
-
                     <x-footer.language/>
-
                 </div>
             </div>
         </div>

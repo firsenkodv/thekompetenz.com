@@ -31,6 +31,7 @@ use App\MoonShine\Resources\SolutionItem\SolutionItemResource;
 use App\MoonShine\Resources\SolutionTag\SolutionTagResource;
 use App\MoonShine\Resources\Contact\ContactResource;
 use App\MoonShine\Resources\InsightTag\InsightTagResource;
+use App\MoonShine\Resources\Page\PageResource;
 
 final class AxeldLayout extends AppLayout
 {
@@ -77,6 +78,8 @@ final class AxeldLayout extends AppLayout
                     MenuItem::make(SolutionCategoryResource::class, 'Categories', 'arrow-right-end-on-rectangle'),
                     MenuItem::make(SolutionItemResource::class, 'Items' ,'bolt'),
                     ]),
+                MenuItem::make(PageResource::class, 'Static pages', 'book-open'),
+
             ]),
 
             MenuGroup::make(static fn() => __('Settings'), [
@@ -88,6 +91,7 @@ final class AxeldLayout extends AppLayout
             MenuGroup::make(static fn() => __('Contacts'), [
                 MenuItem::make(ContactResource::class, 'Regions', 'map-pin'),
             ]),
+
 
 
         ];

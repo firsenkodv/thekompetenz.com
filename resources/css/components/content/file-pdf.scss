@@ -1,6 +1,7 @@
 .content_files_pdf {
     padding:30px 0 10px 0;
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 
     .content_file {

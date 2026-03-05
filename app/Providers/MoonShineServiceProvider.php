@@ -25,6 +25,7 @@ use App\MoonShine\Resources\SolutionItem\SolutionItemResource;
 use App\MoonShine\Resources\SolutionTag\SolutionTagResource;
 use App\MoonShine\Resources\Contact\ContactResource;
 use App\MoonShine\Resources\InsightTag\InsightTagResource;
+use App\MoonShine\Resources\Page\PageResource;
 
 
 class MoonShineServiceProvider extends ServiceProvider
@@ -48,6 +49,7 @@ class MoonShineServiceProvider extends ServiceProvider
                 SolutionTagResource::class,
                 ContactResource::class,
                 InsightTagResource::class,
+                PageResource::class,
             ])
             ->pages([
                 ...$core->getConfig()->getPages(),
