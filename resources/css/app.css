@@ -6,6 +6,7 @@
 @import '@fontsource-variable/nunito-sans/full.css';
 
 @import 'message/flach_message.scss';
+@import 'components/buttons/scrollTopBtn.scss';
 @import 'components/content/solution.scss';
 @import 'components/content/file-pdf.scss';
 @import 'components/content/feedback-form.scss';

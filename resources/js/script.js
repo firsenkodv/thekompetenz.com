@@ -5,6 +5,7 @@ import {select} from "./include/select/select";
 import {flash_message} from "./include/flash_message/flash_message";
 import {content_faq} from "./include/site/content_faq";
 import {mobile} from "./include/mobile/mobile";
+import {scroll} from "./include/site/scroll.js";
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -16,5 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
     flash_message() // закрытие модального окна
     content_faq() // faq
     mobile() // mobile
+    scroll()
 
 });
