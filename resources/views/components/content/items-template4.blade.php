@@ -33,5 +33,9 @@
                 </div>
             </div>
         @endforeach
+
+            {{ $items->withQueryString()->links('pagination::default') }}
+
+
     @endif
 </div>

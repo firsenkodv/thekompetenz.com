@@ -6,6 +6,7 @@ use App\Models\SolutionCategory;
 use App\Models\SolutionTag;
 use App\Models\Work;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\Cache;
 use Support\Traits\Makeable;
 
@@ -13,13 +14,13 @@ class SolutionCategoryViewModel
 {
     use Makeable;
 
-    public function categories():?Collection
+    public function categories():?LengthAwarePaginator
     {
         return Cache::rememberForever('solution_categories', function () {
             return SolutionCategory::query()
                 ->where('published', 1)
                 ->orderBy('sorting', 'desc')
-                ->get();
+                ->paginate(config('site.constants.paginate'));
         });
 
     }
