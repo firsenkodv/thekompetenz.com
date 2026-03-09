@@ -64,7 +64,7 @@ final class AxeldLayout extends AppLayout
                     MenuItem::make(IndividualResource::class, 'Individuals', 'user-circle'),
 
                             ]),
-                MenuGroup::make(static fn() => __('Business Ideas'), [
+                MenuGroup::make(static fn() => __('Insights'), [
                     MenuItem::make(InsightTagResource::class, 'InsightTags', 'tag'),
                     MenuItem::make(InsightPage::class, 'Insight', 'arrow-right-end-on-rectangle'),
                     MenuItem::make(InsightResource::class, 'Insights', 'sparkles'),
