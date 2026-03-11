@@ -1,8 +1,8 @@
 @extends('layouts.partial.layout-top-img')
 <x-seo.meta
-    title="Solutions"
-    description="Solutions - Technology, Media & Telecommunications"
-    keywords="Solutions"
+    title="{{ $solution_item->metatitle ?? $solution_item->title }}"
+    description="{{ $solution_item->description ?? $solution_item->title }}"
+    keywords="{{ $solution_item->keywords ?? $solution_item->title }}"
 />
 <x-seo.title
     title_h1="Solutions"
@@ -14,7 +14,7 @@
     <div class="solution_category">
         <div class="with-840">
             <div class="subtitle">{{ $solution_category->subtitle }}</div>
-            <div class="title"><h1>{{ $solution_category->title }}</h1></div>
+            <div class="title"><h1><a style="color: #fff; text-decoration: none" href="{{ route('items.solutions', $solution_category->slug) }}">{{ $solution_category->title }}</a></h1></div>
             <div class="short_desc">{{ $solution_category->short_desc }}</div>
         </div>
     </div>
