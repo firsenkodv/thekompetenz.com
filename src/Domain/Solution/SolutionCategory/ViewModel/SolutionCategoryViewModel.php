@@ -32,7 +32,7 @@ class SolutionCategoryViewModel
 
     }
 
-    public function search($request):?Collection
+    public function search($request):?LengthAwarePaginator
     {
         $sorting = (isset($request['sorting'])) ? ($request['sorting'] == 'Recently added')? 'desc' : 'asc' : 'desc';
         return SolutionCategory::whereHas('solutionTags', function ($query) use ($request) {
@@ -41,7 +41,7 @@ class SolutionCategoryViewModel
             }
         })
             ->orderBy('created_at', $sorting)
-            ->get();
+            ->paginate(config('site.constants.paginate'));
 
     }
 
