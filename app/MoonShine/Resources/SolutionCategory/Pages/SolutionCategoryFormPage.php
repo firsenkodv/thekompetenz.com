@@ -93,9 +93,9 @@ class SolutionCategoryFormPage extends FormPage
                                 Divider::make('Metatitle'),
 
                                 Box::make([
-                                    Text::make('Title ', 'metatitle')->unescape()->default((isset($metatitle)) ? $metatitle : ''),
-                                    Text::make('Description', 'description')->unescape()->default((isset($description)) ? $description : ''),
-                                    Text::make('Keywords', 'keywords')->unescape()->default((isset($keywords)) ? $keywords : ''),
+                                    Text::make('Title ', 'metatitle')->unescape(),
+                                    Text::make('Description', 'description')->unescape(),
+                                    Text::make('Keywords', 'keywords')->unescape(),
                                 ]),
 
                                 Box::make([
