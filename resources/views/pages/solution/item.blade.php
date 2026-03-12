@@ -26,7 +26,6 @@
             <x-menu.menu-horizontal :items="$solution_category->solutionItems" route="item.solutions"/>
         </div>
     </section>
-    {!! htmlspecialchars($solution_item->metatitle) !!}
     <section class="content-website">
         <div class="block relative">
             <div class="with-840">
