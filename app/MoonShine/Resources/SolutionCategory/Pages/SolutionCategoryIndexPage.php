@@ -44,7 +44,7 @@ class SolutionCategoryIndexPage extends IndexPage
         return [
             ID::make(),
             Image::make(__('Img'), 'img'),
-            Text::make('Title', 'title')->updateOnPreview(),
+            Text::make('Title', 'title')->unescape()->updateOnPreview(),
             Switcher::make('Published', 'published')->updateOnPreview(),
             Text::make('Sorting', 'sorting')->updateOnPreview(),
 

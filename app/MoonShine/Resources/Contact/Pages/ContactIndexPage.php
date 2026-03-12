@@ -36,12 +36,12 @@ class ContactIndexPage extends IndexPage
         return [
             ID::make(),
             Image::make('Flag', 'flag'),
-            Text::make('Address', 'address')->updateOnPreview(),
-            Text::make('Country', 'country')->updateOnPreview(),
-            Text::make('Email', 'email')->updateOnPreview(),
-            Text::make('Phone', 'phone')->updateOnPreview(),
+            Text::make('Address', 'address')->unescape()->updateOnPreview(),
+            Text::make('Country', 'country')->unescape()->updateOnPreview(),
+            Text::make('Email', 'email')->unescape()->updateOnPreview(),
+            Text::make('Phone', 'phone')->unescape()->updateOnPreview(),
             Switcher::make('Published', 'published')->updateOnPreview(),
-            Text::make('Sorting', 'sorting')->updateOnPreview(),
+            Text::make('Sorting', 'sorting')->unescape()->updateOnPreview(),
 
         ];
     }

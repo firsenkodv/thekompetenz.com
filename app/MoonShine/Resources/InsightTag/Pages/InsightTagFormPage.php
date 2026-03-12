@@ -31,7 +31,7 @@ class InsightTagFormPage extends FormPage
         return [
             Box::make([
                 ID::make(),
-                Text::make('Title', 'title')->required()
+                Text::make('Title', 'title')->required()->unescape()
 
             ]),
         ];

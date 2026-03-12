@@ -35,7 +35,7 @@ class SolutionTagIndexPage extends IndexPage
     {
         return [
             ID::make(),
-            Text::make('Title', 'title')->updateOnPreview(),
+            Text::make('Title', 'title')->unescape()->updateOnPreview(),
         ];
     }
 

@@ -1,8 +1,8 @@
 @extends('layouts.partial.layout-about-us')
 <x-seo.meta
-    title="{{ config2('moonshine.work.metatitle') }}"
-    description="{{ config2('moonshine.work.description') }}"
-    keywords="{{ config2('moonshine.work.keywords') }}"
+    title="{!!  config2('moonshine.work.metatitle') !!}"
+    description="{!!  config2('moonshine.work.description') !!}"
+    keywords="{!!  config2('moonshine.work.keywords') !!}"
 />
 @section('content-about-us')
     <section class="trusted_protection">

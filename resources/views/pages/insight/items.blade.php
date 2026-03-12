@@ -1,8 +1,8 @@
 @extends('layouts.partial.layout-blue')
 <x-seo.meta
-    title="{{ config2('moonshine.insight.metatitle') }}"
-    description="{{ config2('moonshine.insight.description') }}"
-    keywords="{{ config2('moonshine.insight.keywords') }}"
+    title="{!!  config2('moonshine.insight.metatitle') !!}"
+    description="{!!  config2('moonshine.insight.description') !!}"
+    keywords="{!!  config2('moonshine.insight.keywords') !!}"
 />
 <x-seo.title
     title_h1="{{ config2('moonshine.insight.title') }}"

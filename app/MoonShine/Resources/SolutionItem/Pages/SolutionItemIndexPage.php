@@ -41,10 +41,10 @@ class SolutionItemIndexPage extends IndexPage
         return [
             ID::make(),
             Image::make(__('Img'), 'img'),
-            Text::make('Title', 'title')->updateOnPreview(),
+            Text::make('Title', 'title')->unescape()->updateOnPreview(),
             Switcher::make('Published', 'published')->updateOnPreview(),
             Text::make('Sorting', 'sorting')->updateOnPreview(),
-            BelongsTo::make('Category', 'solutionCategory', 'title', resource: SolutionCategoryResource::class)->nullable(),
+            BelongsTo::make('Category', 'solutionCategory', 'title', resource: SolutionCategoryResource::class)->unescape()->nullable(),
             Switcher::make('Metatitle', 'metatitle'),
             Switcher::make('Description', 'description'),
             Switcher::make('Keywords', 'keywords'),

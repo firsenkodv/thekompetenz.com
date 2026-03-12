@@ -56,10 +56,10 @@ class SolutionItemFormPage extends FormPage
                             Column::make([
 
                                 Box::make([
-                                    Text::make('Title', 'title')->required(),
+                                    Text::make('Title', 'title')->unescape()->required(),
                                     Slug::make('Slug', 'slug')
                                         ->from('title')->unique()->locked(),
-                                    Text::make('SubTitle', 'subtitle'),
+                                    Text::make('SubTitle', 'subtitle')->unescape(),
                                 ]),
 
 
@@ -75,7 +75,7 @@ class SolutionItemFormPage extends FormPage
                                 ]),
 
                                 Box::make([
-                                    BelongsTo::make('Category', 'solutionCategory', 'title', resource: SolutionCategoryResource::class)->nullable(),
+                                    BelongsTo::make('Category', 'solutionCategory', 'title', resource: SolutionCategoryResource::class)->unescape()->nullable(),
 
                                     Switcher::make('Published', 'published')->default(1),
                                     Number::make('Sorting', 'sorting')->buttons()->default(0),
@@ -164,7 +164,7 @@ class SolutionItemFormPage extends FormPage
 
                                                 Box::make([
                                                     Json::make('Files', 'files')->fields([
-                                                        Text::make('Title', 'json_files_label'),
+                                                        Text::make('Title', 'json_files_label')->unescape(),
                                                         Image::make(__('File'), 'json_files_text')
                                                             ->dir('files/insights')
                                                             ->removable(),

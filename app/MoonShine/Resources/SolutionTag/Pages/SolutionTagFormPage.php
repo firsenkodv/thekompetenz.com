@@ -33,7 +33,7 @@ class SolutionTagFormPage extends FormPage
             Box::make([
                 ID::make(),
                 Box::make([
-                    Text::make('Title', 'title')->required()
+                    Text::make('Title', 'title')->required()->unescape()
                 ]),
             ]),
         ];

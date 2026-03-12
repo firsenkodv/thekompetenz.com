@@ -1,8 +1,8 @@
 @extends('layouts.partial.layout-top-img')
 <x-seo.meta
-    title="{{ $solution_category->metatitle ?? $solution_category->title }}"
-    description="{{ $solution_category->description ?? $solution_category->title }}"
-    keywords="{{ $solution_category->keywords ?? $solution_category->title }}"
+    title="{!! $solution_category->metatitle ? $solution_category->metatitle: $solution_category->title !!}"
+    description="{!!  $solution_category->description ?? $solution_category->title !!}"
+    keywords="{!!  $solution_category->keywords ?? $solution_category->title !!}"
 />
 <x-seo.title
     title_h1="Solutions"

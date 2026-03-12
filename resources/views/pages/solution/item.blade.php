@@ -1,8 +1,8 @@
 @extends('layouts.partial.layout-top-img')
 <x-seo.meta
-    title="{{ $solution_item->metatitle ?? $solution_item->title }}"
-    description="{{ $solution_item->description ?? $solution_item->title }}"
-    keywords="{{ $solution_item->keywords ?? $solution_item->title }}"
+    title="{!! $solution_item->metatitle ? $solution_item->metatitle: $solution_item->title !!}"
+    description="{!!  $solution_item->description ?? $solution_item->title !!}"
+    keywords="{!!  $solution_item->keywords ?? $solution_item->title !!}"
 />
 <x-seo.title
     title_h1="Solutions"
@@ -26,7 +26,7 @@
             <x-menu.menu-horizontal :items="$solution_category->solutionItems" route="item.solutions"/>
         </div>
     </section>
-
+    {!! htmlspecialchars($solution_item->metatitle) !!}
     <section class="content-website">
         <div class="block relative">
             <div class="with-840">

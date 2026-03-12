@@ -59,10 +59,10 @@ class InsightFormPage extends FormPage
                             Column::make([
 
                                 Box::make([
-                                    Text::make('Title', 'title')->required(),
+                                    Text::make('Title', 'title')->unescape()->required(),
                                     Slug::make('Slug', 'slug')
                                         ->from('title')->unique()->locked(),
-                                    Text::make('SubTitle', 'subtitle'),
+                                    Text::make('SubTitle', 'subtitle')->unescape(),
                                     Textarea::make('Short Description', 'short_desc')
                                 ]),
 
@@ -86,9 +86,9 @@ class InsightFormPage extends FormPage
                                 Divider::make('Metatitle'),
 
                                 Box::make([
-                                    Text::make('Title ', 'metatitle')->unescape()->default((isset($metatitle)) ? $metatitle : ''),
-                                    Text::make('Description', 'description')->unescape()->default((isset($description)) ? $description : ''),
-                                    Text::make('Keywords', 'keywords')->unescape()->default((isset($keywords)) ? $keywords : ''),
+                                    Text::make('Title ', 'metatitle')->unescape(),
+                                    Text::make('Description', 'description'),
+                                    Text::make('Keywords', 'keywords')->unescape(),
                                 ]),
 
                                 Box::make([
@@ -179,7 +179,7 @@ class InsightFormPage extends FormPage
 
                                                 Box::make([
                                                     Json::make('Files', 'files')->fields([
-                                                        Text::make('Title', 'json_files_label'),
+                                                        Text::make('Title', 'json_files_label')->unescape(),
                                                         Image::make(__('File'), 'json_files_text')
                                                             ->dir('files/insights')
                                                             ->removable(),

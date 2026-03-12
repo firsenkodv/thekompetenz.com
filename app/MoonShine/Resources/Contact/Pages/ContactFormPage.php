@@ -54,10 +54,10 @@ class ContactFormPage extends FormPage
                             Column::make([
 
                                 Box::make([
-                                    Text::make('Title', 'title')->required(),
+                                    Text::make('Title', 'title')->required()->unescape(),
                                     Slug::make('Slug', 'slug')
                                         ->from('title')->unique()->locked(),
-                                    Text::make('SubTitle', 'subtitle'),
+                                    Text::make('SubTitle', 'subtitle')->unescape(),
                                 ]),
                                 Box::make([
                                     Image::make(__('Flag'), 'flag')
@@ -111,10 +111,10 @@ class ContactFormPage extends FormPage
                                                 Collapse::make('YandexMap', [
 
                                                     Json::make('Question-Answer', 'map')->fields([
-                                                        Text::make('Title', 'map_title'),
-                                                        Text::make('Coordinates', 'map_coordinates'),
+                                                        Text::make('Title', 'map_title')->unescape(),
+                                                        Text::make('Coordinates', 'map_coordinates')->unescape(),
                                                         Number::make('Phone', 'map_phone'),
-                                                        Text::make('Email', 'map_email')
+                                                        Text::make('Email', 'map_email')->unescape()
 
                                                     ])->vertical()->creatable(limit: 1)
                                                         ->removable(),

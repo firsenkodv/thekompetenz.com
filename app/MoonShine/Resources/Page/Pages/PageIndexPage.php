@@ -39,7 +39,7 @@ class PageIndexPage extends IndexPage
         return [
             ID::make(),
             Image::make(__('Img'), 'img'),
-            Text::make('Title', 'title')->updateOnPreview(),
+            Text::make('Title', 'title')->updateOnPreview()->unescape(),
             Switcher::make('Published', 'published')->updateOnPreview(),
             Switcher::make('Metatitle', 'metatitle'),
             Switcher::make('Description', 'description'),
