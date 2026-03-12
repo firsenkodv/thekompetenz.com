@@ -8,7 +8,7 @@
     'settings' => [],
     'plugins' => [],
 ])
-
+{{--Путь из resources/views/vendor/moonshine/components/form/select.blade.php--}}
 <select
     {{ $attributes->merge([
         'class' => $native ? 'form-select' : null,
