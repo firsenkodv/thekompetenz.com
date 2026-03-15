@@ -43,7 +43,7 @@
     @if($item->form)
         <div class="content_item__flex apply_auto_insurance">
             <div class="content_item__left">
-                <h2 class="_44">Apply for auto insurance</h2>
+                <h2 class="_44">Apply for risk management</h2>
             </div>
             <div class="content_item__right">
                 <div class="dark-blue ">
